@@ -23,27 +23,21 @@ class CustomerButton extends Component {
     }
   }
 
-  onOpen = () => {}
+  onOpen = () => {};
 
-  onCancel = () => {}
+  onCancel = () => {};
 
   render() {
     const { addInfo, visible } = this.state;
     return (
-      <div>
+      <div className={style.addItem}>
         <Button className={style.addItem} type="primary" onClick={this.onOpen}>
-        <Icon type="add" />
-        {addInfo}
+          <Icon type="add" />
+          {addInfo}
         </Button>
-      <Modal
-       title={addInfo}
-       visible={visible}
-       onCancel={this.onCancel}
-      >
-
-      </Modal>
+        <Modal title={addInfo} visible={visible} onCancel={this.onCancel}></Modal>
       </div>
-    )
+    );
   }
 }
 

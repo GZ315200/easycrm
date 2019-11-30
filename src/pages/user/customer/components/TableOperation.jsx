@@ -23,6 +23,7 @@ class TableOperation extends Component {
         <Button
           className={style.operateLeftBtn}
           type="normal"
+          size="small"
           onClick={this.onEditItem(resultData)}
         >
           <Icon type="edit" />
@@ -30,6 +31,7 @@ class TableOperation extends Component {
         </Button>
         <Button
           className={style.operateRightBtn}
+          size="small"
           type="primary"
           onClick={this.onRemoveItem(resultData.id)}
         >

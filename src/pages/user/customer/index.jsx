@@ -32,7 +32,7 @@ class Custom extends PureComponent {
 
         <div className={style.tableContainer}>
           <div className={style.tableItem}>
-            <Table dataSource={dataSource} size="middle" bordered fixedHeader>
+            <Table dataSource={dataSource} size="small" bordered fixedHeader>
               <Table.Column title="公司名称" align="center" dataIndex="orgName" width={100} />
               <Table.Column title="法人" align="center" dataIndex="legelPersonName" width={100} />
               <Table.Column
@@ -55,7 +55,7 @@ class Custom extends PureComponent {
               <Table.Column title="公司地址" align="center" dataIndex="address" width={100} />
               <Table.Column title="经营范围" align="center" dataIndex="businessScope" width={100} />
               <Table.Column title="资料日期" align="center" dataIndex="createTime" width={100} />
-              <Table.Column title="操作" align="center" render={operate} width={200} />
+              <Table.Column title="操作" align="center" render={operate} width={150} />
             </Table>
           </div>
         </div>
