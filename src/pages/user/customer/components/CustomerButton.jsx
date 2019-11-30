@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Button, Icon, Modal } from 'antd';
 
 import { PathName } from '../config';
-import CustomerForm from './CustomerForm'
+import CustomerForm from './CustomerForm';
 import style from '../index.less';
 
 class CustomerButton extends Component {
   constructor(props) {
     super(props);
-    const { match } = this.props
-    const { path } = match
+    const { match } = this.props;
+    const { path } = match;
 
     this.state = {
       addInfo: '',
@@ -18,26 +18,26 @@ class CustomerButton extends Component {
     };
 
     if (path === PathName.MENU_INFO) {
-      this.state.addInfo = '添加客户信息'
-      this.state.formType = 0
+      this.state.addInfo = '添加客户信息';
+      this.state.formType = 0;
     }
     if (path === PathName.MENU_DEMANDS) {
-      this.state.addInfo = '添加客户需求进度'
-      this.state.formType = 1
+      this.state.addInfo = '添加客户需求进度';
+      this.state.formType = 1;
     }
   }
 
   onOpen = () => {
     this.setState({
       visible: true,
-    })
-  }
+    });
+  };
 
   onCancel = () => {
     this.setState({
       visible: false,
-    })
-  }
+    });
+  };
 
   render() {
     const { addInfo, visible, formType } = this.state;
@@ -47,8 +47,15 @@ class CustomerButton extends Component {
           <Icon type="add" />
           {addInfo}
         </Button>
-        <Modal title={addInfo} visible={visible} onCancel={this.onCancel} footer={null} keyboard>
-           <CustomerForm formType={formType} />
+        <Modal
+          width={600}
+          title={addInfo}
+          visible={visible}
+          onCancel={this.onCancel}
+          footer={null}
+          keyboard
+        >
+          <CustomerForm formType={formType} />
         </Modal>
       </div>
     );

@@ -28,12 +28,7 @@ export default function CustomerForm(props) {
     },
   };
 
-  const formButtonLayout = { span: 12, offset: 18 };
-
-  const stepStyle = {
-    marginBottom: 50,
-    boxShadow: '0px -1px 0 0 #e8e8e8 inset',
-  };
+  const formButtonLayout = { span: 12, offset: 20 }
 
   const customerInfoForm = () => (
     <Form {...formItemLayout}>
@@ -61,14 +56,14 @@ export default function CustomerForm(props) {
       <Form.Item label="网站情况" whitespace>
         <Input placeholder="请输入网站情况" id="situation" />
       </Form.Item>
-      <Form.Item label="成立时间" type="date">
-        <DatePicker value={datetime} placeholder="请选择成立时间" onChange={onDateChange} />
-      </Form.Item>
       <Form.Item label="公司地址" whitespace>
         <Input placeholder="请输入公司地址" id="address" />
       </Form.Item>
       <Form.Item label="经营范围" whitespace>
         <Input placeholder="请输入经营范围" id="area" />
+      </Form.Item>
+      <Form.Item label="成立时间" type="date">
+        <DatePicker value={datetime} placeholder="请选择成立时间" onChange={onDateChange} />
       </Form.Item>
       <Form.Item wrapperCol={formButtonLayout}>
         <Button type="primary" htmlType="submit">
