@@ -1,55 +1,58 @@
-
 .container {
+  height: 100%;
+  width: 100%;
+  position: inherit;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+
+  .filterContainer {
+    margin: 10px 0px 0px 10px;
+    padding-bottom: 10px;
+    display: block;
+
+    .filterInput {
+      width: 30%;
+      display: inline-block;
+    }
+    .filterItemSearch {
+      left: 10px;
+      display: inline-block;
+    }
+    .addItem {
+      left: 20px;
+      display: inline-block;
+    }
+  }
+
+  .tableContainer {
     height: 100%;
     width: 100%;
-    position: inherit;
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: white;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    display: block;
 
-    .filterContainer {
-        margin: 10px 0px 0px 10px;
-        padding-bottom: 10px;
-        display: block;
-
-        .filterInput {
-            width: 30%;
-            display: inline-block;
-        }
-        .filterItemSearch {
-            left: 10px;
-            display: inline-block;
-        }
-        .addItem{
-            left: 20px;
-            display: inline-block;
-        }
+    .tableItem {
+      padding: 0px 10px 0px 10px;
     }
-
-    .tableContainer {
-        height: 100%;
-        width: 100%;
-        margin: 10px 0px;
-        padding-bottom: 10px;
-        display: block;
-
-        .tableItem {
-            padding: 0px 10px 0px 10px;
-        }
-    }
-
-
+  }
 }
 
 .operateContainer {
-    text-align: center;
+  text-align: center;
+  display: inline-block;
+  .operateLeftBtn {
     display: inline-block;
-    .operateLeftBtn {
-        display: inline-block;
-        right: 8px;
-    }
-    .operateRightBtn {
-        display: inline-block;
-        left: 8px;
-    }
+    right: 8px;
+  }
+  .operateRightBtn {
+    display: inline-block;
+    left: 8px;
+  }
+}
+
+.dowload {
+  float: right;
+  right: 25px;
+  // display: inline-block;
 }

@@ -1,4 +1,4 @@
 export const PathName = {
-    MENU_INFO: '/custom/info',
-    MENU_DEMANDS: '/custom/demands',
+    MENU_INFO: '/customer/info',
+    MENU_DEMANDS: '/customer/demands',
 }

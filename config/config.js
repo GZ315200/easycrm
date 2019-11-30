@@ -108,21 +108,21 @@ export default {
               component: './Welcome',
             },
             {
-              path: '/custom',
-              name: 'custom',
+              path: '/customer',
+              name: 'customer',
               icon: 'user',
               routes: [
                 {
-                  path: '/custom/info',
+                  path: '/customer/info',
                   name: 'info',
                   icon: 'user-add',
-                  component: './user/custom',
+                  component: './user/customer',
                 },
                 {
-                  path: '/custom/demands',
+                  path: '/customer/demands',
                   name: 'demands',
                   icon: 'solution',
-                  component: './user/custom/Progress',
+                  component: './user/customer/Progress',
                 }
               ]
             },
