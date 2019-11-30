@@ -4,12 +4,11 @@ import { Form, Input, DatePicker } from 'antd';
 export default function CustomerForm(props) {
   const { formType } = props;
 
-  const [datetime, setDataTime] = useState('')
+  const [datetime, setDataTime] = useState('');
 
   const onDateChange = (date, dateString) => {
-     setDataTime(dateString)
-  }
-
+    setDataTime(dateString);
+  };
 
   const formItemLayout = {
     labelCol: {
@@ -39,29 +38,37 @@ export default function CustomerForm(props) {
       <Form.Item label="联系人联系方式">
         <Input placeholder="请输入联系人联系方式" id="phone" />
       </Form.Item>
-      <Form.Item label="邮箱" >
+      <Form.Item label="邮箱">
         <Input placeholder="请输入邮箱" id="email" />
       </Form.Item>
-      <Form.Item label="网址" >
+      <Form.Item label="网址">
         <Input placeholder="请输入网址" id="website" />
       </Form.Item>
-      <Form.Item label="网站情况" >
+      <Form.Item label="网站情况">
         <Input placeholder="请输入网站情况" id="situation" />
       </Form.Item>
-      <Form.Item label="成立时间" >
-        <DatePicker value={datetime} placeholder="请选择成立时间" onChange={onDateChange}/>
+      <Form.Item label="成立时间">
+        <DatePicker value={datetime} placeholder="请选择成立时间" onChange={onDateChange} />
       </Form.Item>
-      <Form.Item label="公司地址" >
+      <Form.Item label="公司地址">
         <Input placeholder="请输入公司地址" id="address" />
       </Form.Item>
-      <Form.Item label="经营范围" >
+      <Form.Item label="经营范围">
         <Input placeholder="请输入经营范围" id="area" />
       </Form.Item>
     </Form>
   );
   const customerDemandsForm = (
     <Form {...formItemLayout}>
-      <Form.Item></Form.Item>
+      <Form.Item label="客户名称">
+        <Input placeholder="请输入邮箱" id="customer" />
+      </Form.Item>
+      <Form.Item label="客户需求">
+        <Input placeholder="请输入网址" id="demands" />
+      </Form.Item>
+      <Form.Item label="谈单/开发进度">
+        <Input placeholder="请输入网站情况" id="progress" />
+      </Form.Item>
     </Form>
   );
 

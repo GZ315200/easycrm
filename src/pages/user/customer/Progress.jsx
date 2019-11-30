@@ -35,7 +35,7 @@ class Progress extends PureComponent {
               <Table.Column title="客户名称" align="center" dataIndex="name" width={100} />
               <Table.Column title="客户需求" align="center" dataIndex="demands" width={100} />
               <Table.Column title="谈单/开发进度" align="center" dataIndex="process" width={100} />
-              <Table.Column title="操作" align="center" render={operate} width={100} />
+              <Table.Column title="操作" align="center" render={operate} width={50} />
             </Table>
           </div>
         </div>
