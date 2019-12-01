@@ -6,7 +6,7 @@ import style from '../index.less';
 export default function DownloadInfos() {
   const onClick = () => {
     console.log('abc');
-  }
+  };
   return (
     <Tooltip placement="leftTop" title="导出excel文件">
       <Button
@@ -17,5 +17,5 @@ export default function DownloadInfos() {
         onClick={onClick}
       ></Button>
     </Tooltip>
-  )
+  );
 }

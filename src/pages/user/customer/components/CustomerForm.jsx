@@ -28,7 +28,7 @@ export default function CustomerForm(props) {
     },
   };
 
-  const formButtonLayout = { span: 12, offset: 20 }
+  const formButtonLayout = { span: 12, offset: 20 };
 
   const customerInfoForm = () => (
     <Form {...formItemLayout}>
@@ -89,7 +89,7 @@ export default function CustomerForm(props) {
       <Form.Item label="客户需求" whitespace="true">
         <Input placeholder="请输入客户需求" id="demands" />
       </Form.Item>
-      <Form.Item label="谈单/开发进度" >
+      <Form.Item label="谈单/开发进度">
         <Radio.Group name="progressRadio" defaultValue={1}>
           <Radio value={1}>未开始</Radio>
           <Radio value={2}>开发中</Radio>
