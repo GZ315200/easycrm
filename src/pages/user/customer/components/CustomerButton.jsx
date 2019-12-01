@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button, Icon, Modal } from 'antd';
-
 import { PathName } from '../config';
 import CustomerForm from './CustomerForm';
 import style from '../index.less';
