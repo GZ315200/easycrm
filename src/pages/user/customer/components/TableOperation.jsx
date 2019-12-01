@@ -41,19 +41,14 @@ class TableOperation extends Component {
   };
 
   onRemoveItem = record => {
-    console.log(record)
+    console.log(record);
   };
 
   render() {
     const { resultData, addInfo, visible, formType } = this.state;
     return (
       <div className={style.operateContainer}>
-        <Button
-          className={style.operateLeftBtn}
-          type="normal"
-          size="small"
-          onClick={this.onOpen}
-        >
+        <Button className={style.operateLeftBtn} type="normal" size="small" onClick={this.onOpen}>
           <Icon type="edit" />
           编辑
         </Button>

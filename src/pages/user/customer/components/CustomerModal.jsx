@@ -43,4 +43,4 @@ class CustomerModal extends Component {
   }
 }
 
-export default CustomerModal
+export default CustomerModal;
