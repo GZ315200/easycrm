@@ -22,7 +22,7 @@ class Custom extends PureComponent {
       },
     ];
 
-    const operate = (text, record) => <TableOperation {...record} />;
+    const operate = (text, record) => <TableOperation {...record} {...this.props} />;
 
     return (
       <div className={style.container}>
