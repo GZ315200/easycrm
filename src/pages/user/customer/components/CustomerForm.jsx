@@ -32,34 +32,34 @@ export default function CustomerForm(props) {
 
   const customerInfoForm = () => (
     <Form {...formItemLayout}>
-      <Form.Item label="公司名称" whitespace>
+      <Form.Item label="公司名称" whitespace="true">
         <Input placeholder="请输入公司名称" id="org" />
       </Form.Item>
-      <Form.Item label="法人" whitespace>
+      <Form.Item label="法人" whitespace="true">
         <Input placeholder="请输入法人信息" id="law" />
       </Form.Item>
-      <Form.Item label="法人联系方式" whitespace>
+      <Form.Item label="法人联系方式" whitespace="true">
         <Input placeholder="请输入法人联系方式" id="lawContract" />
       </Form.Item>
-      <Form.Item label="联系人" whitespace>
+      <Form.Item label="联系人" whitespace="true">
         <Input placeholder="请输入联系人" id="contractor" />
       </Form.Item>
-      <Form.Item label="联系人联系方式" whitespace>
+      <Form.Item label="联系人联系方式" whitespace="true">
         <Input placeholder="请输入联系人联系方式" id="phone" />
       </Form.Item>
-      <Form.Item label="邮箱" whitespace>
+      <Form.Item label="邮箱" whitespace="true">
         <Input placeholder="请输入邮箱" id="email" />
       </Form.Item>
-      <Form.Item label="网址" whitespace>
+      <Form.Item label="网址" whitespace="true">
         <Input placeholder="请输入网址" id="website" />
       </Form.Item>
-      <Form.Item label="网站情况" whitespace>
+      <Form.Item label="网站情况" whitespace="true">
         <Input placeholder="请输入网站情况" id="situation" />
       </Form.Item>
-      <Form.Item label="公司地址" whitespace>
+      <Form.Item label="公司地址" whitespace="true">
         <Input placeholder="请输入公司地址" id="address" />
       </Form.Item>
-      <Form.Item label="经营范围" whitespace>
+      <Form.Item label="经营范围" whitespace="true">
         <Input placeholder="请输入经营范围" id="area" />
       </Form.Item>
       <Form.Item label="成立时间" type="date">
@@ -74,7 +74,7 @@ export default function CustomerForm(props) {
   );
   const customerDemandsForm = () => (
     <Form {...formItemLayout}>
-      <Form.Item label="客户名称" whitespace>
+      <Form.Item label="客户名称" whitespace="true">
         <Select
           value={name}
           showSearch
@@ -86,10 +86,10 @@ export default function CustomerForm(props) {
           }
         ></Select>
       </Form.Item>
-      <Form.Item label="客户需求" whitespace>
+      <Form.Item label="客户需求" whitespace="true">
         <Input placeholder="请输入客户需求" id="demands" />
       </Form.Item>
-      <Form.Item label="谈单/开发进度" whitespace>
+      <Form.Item label="谈单/开发进度" >
         <Radio.Group name="progressRadio" defaultValue={1}>
           <Radio value={1}>未开始</Radio>
           <Radio value={2}>开发中</Radio>
