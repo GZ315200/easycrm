@@ -28,11 +28,16 @@ export async function modifyCustomerInfo(params) {
 }
 
 export async function searchCustomerInfo(value) {
-    return request(`${apiConfig.CUSTOMER_INFO}?searchValue=${value}`, {
-      method: 'GET',
-    });
+  return request(`${apiConfig.CUSTOMER_INFO}?searchValue=${value}`, {
+    method: 'GET',
+  });
 }
 
+export async function downloadCustomerInfo() {
+  return request(`${apiConfig.CUSTOMER_INFO}/download`, {
+    method: 'GET',
+  });
+}
 
 export async function addCustomerDemands(params) {
   return request(apiConfig.CUSTOMER_DEMANDS, {
@@ -61,7 +66,13 @@ export async function deleteCustomerDemands(id) {
 }
 
 export async function searchCustomerDemands(value) {
-    return request(`${apiConfig.CUSTOMER_DEMANDS}?searchValue=${value}`, {
-      method: 'GET',
-    });
+  return request(`${apiConfig.CUSTOMER_DEMANDS}?searchValue=${value}`, {
+    method: 'GET',
+  });
+}
+
+export async function downloadCustomerDemands() {
+  return request(`${apiConfig.CUSTOMER_INFO}/download`, {
+    method: 'GET',
+  });
 }
