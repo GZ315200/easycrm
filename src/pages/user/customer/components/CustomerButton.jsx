@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button, Icon } from 'antd';
+import { Button, Icon, Modal } from 'antd';
 
 import { PathName } from '../config';
-import CustomerModal from './CustomerModal';
+import CustomerForm from './CustomerForm';
 import style from '../index.less';
 
 class CustomerButton extends Component {
@@ -33,15 +33,31 @@ class CustomerButton extends Component {
     });
   };
 
+  onCancel = () => {
+    this.setState({
+      visible: false,
+    });
+  };
+
   render() {
     const { addInfo, visible, formType } = this.state;
+    // console.log('viz', visible);
     return (
       <div className={style.addItem}>
         <Button className={style.addItem} type="primary" onClick={this.onOpen}>
           <Icon type="add" />
           {addInfo}
         </Button>
-        {visible ? <CustomerModal addInfo={addInfo} formType={formType} /> : null}
+        <Modal
+          width={600}
+          title={addInfo}
+          visible={visible}
+          onCancel={this.onCancel}
+          footer={null}
+          keyboard
+        >
+          <CustomerForm formType={formType} />
+        </Modal>
       </div>
     );
   }
