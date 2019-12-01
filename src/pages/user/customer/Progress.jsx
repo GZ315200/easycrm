@@ -22,7 +22,7 @@ class Progress extends PureComponent {
       },
     ];
 
-    const operate = (text, record) => <TableOperation {...record} {...this.props} />;
+    const operate = (text, record) => <TableOperation record = {record} {...this.props} />;
 
     return (
       <div className={style.container}>
