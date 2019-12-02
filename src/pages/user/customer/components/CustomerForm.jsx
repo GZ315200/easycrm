@@ -6,6 +6,7 @@ export default function CustomerForm(props) {
 
   const [datetime, setDataTime] = useState('');
   const [name, setName] = useState('');
+  const [visable, setVisable] = useState(false);
 
   const onDateChange = (date, dateString) => {
     setDataTime(dateString);
@@ -16,6 +17,11 @@ export default function CustomerForm(props) {
   const onChangeValue = value => {
     setName(value);
   };
+
+  const saveRecord = () => {
+    setVisable(false)
+    props.handleValue(visable)
+  }
 
   const formItemLayout = {
     labelCol: {
