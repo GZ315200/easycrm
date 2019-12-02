@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Icon, Modal } from 'antd';
+import { Button, Icon } from 'antd';
 import style from '../index.less';
-import CustomerForm from './CustomerForm';
+import CustomerModal from './CustomerModal';
 import { PathName } from '../config';
 
 class TableOperation extends Component {
@@ -34,9 +34,9 @@ class TableOperation extends Component {
     });
   };
 
-  onCancel = () => {
+  onCancel = value => {
     this.setState({
-      visible: false,
+      visible: value,
     });
   };
 
@@ -52,16 +52,12 @@ class TableOperation extends Component {
           <Icon type="edit" />
           编辑
         </Button>
-        <Modal
-          width={600}
-          title={addInfo}
+        <CustomerModal
+          addInfo={addInfo}
           visible={visible}
+          formType={formType}
           onCancel={this.onCancel}
-          footer={null}
-          keyboard
-        >
-          <CustomerForm formType={formType} />
-        </Modal>
+        />
         <Button
           className={style.operateRightBtn}
           size="small"
