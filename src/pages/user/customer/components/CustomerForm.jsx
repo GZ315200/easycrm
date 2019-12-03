@@ -6,7 +6,6 @@ export default function CustomerForm(props) {
 
   const [datetime, setDataTime] = useState('');
   const [name, setName] = useState('');
-  const [visable, setVisable] = useState(false);
 
   const onDateChange = (date, dateString) => {
     setDataTime(dateString);
@@ -19,8 +18,7 @@ export default function CustomerForm(props) {
   };
 
   const saveRecord = () => {
-    setVisable(false)
-    props.handleValue(visable)
+    props.onHandleCancel()
   }
 
   const formItemLayout = {
@@ -36,8 +34,9 @@ export default function CustomerForm(props) {
 
   const formButtonLayout = { span: 12, offset: 20 };
 
-  const customerInfoForm = () => (
-    <Form {...formItemLayout}>
+  const customerInfoForm = () => {
+    const type = formType
+    return type === 0 ? (<Form {...formItemLayout}>
       <Form.Item label="公司名称" whitespace="true">
         <Input placeholder="请输入公司名称" id="org" />
       </Form.Item>
@@ -76,10 +75,8 @@ export default function CustomerForm(props) {
           提交
         </Button>
       </Form.Item>
-    </Form>
-  );
-  const customerDemandsForm = () => (
-    <Form {...formItemLayout}>
+    </Form>) : (
+      <Form {...formItemLayout}>
       <Form.Item label="客户名称" whitespace="true">
         <Select
           value={name}
@@ -110,7 +107,8 @@ export default function CustomerForm(props) {
         </Button>
       </Form.Item>
     </Form>
-  );
+    )
+  }
 
-  return formType === 0 ? customerInfoForm() : customerDemandsForm();
+  return customerInfoForm()
 }
