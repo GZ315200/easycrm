@@ -42,7 +42,7 @@ git clone https://github.com/GZ315200/easycrm.git
 
 - 创建DATABASE_URL的系统环境变量
  ```shell
- export DATABASE_URL=mysql://user:pass@localhost/heroes
+ export DATABASE_URL=mysql://user:pass@localhost/easycrm
  ```
 - 运行Database的迁移命令
 
@@ -53,7 +53,7 @@ git clone https://github.com/GZ315200/easycrm.git
 
 ```shell
 cargo build --release && cd target/release/
-sudo ROCKET_ENV=prod ./hero-api
+sudo ROCKET_ENV=prod ./easycrm-api
 ```
 App将在启动在[启动](http://localhost:80)，点击检查一下吧
 
