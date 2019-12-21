@@ -37,7 +37,7 @@ const UserLayout = props => {
         {
           key: 'github',
           title: <Icon type="github" />,
-          href: 'https://github.com/gygesM',
+          href: 'https://github.com/GZ315200',
           blankTarget: true,
         },
       ]}
