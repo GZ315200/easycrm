@@ -26,8 +26,72 @@
 
 ## 如何启动应用呢？
 
+### 后端服务
+
+#### 要求
+
+1. Rust and Cargo - 1.41.0 (nightly)
+2. Diesel CLI - 1.4.0
+3. Mysql -5.x.x
+
+ - Clone 这个项目
+```
+git clone https://github.com/GZ315200/easycrm.git
+```
+进入easycrm/easycrm-api/目录下
+
+- 创建DATABASE_URL的系统环境变量
+ ```shell
+ export DATABASE_URL=mysql://user:pass@localhost/heroes
+ ```
+- 运行Database的迁移命令
+
+ ```shell
+ diesel migration run
+ ```
+- 构建并运行
+
+```shell
+cargo build --release && cd target/release/
+sudo ROCKET_ENV=prod ./hero-api
+```
+App将在启动在[启动](http://localhost:80)，点击检查一下吧
+
+- 另外你可以在该目录下输入命令，运行后端项目
+```
+cargo run
+```
+
+
+### 前端服务
+
+进入含有package.json的目录下，也就是easycrm目录下
+
+```shell
+# 下载依赖包
+npm install
+
+# 启动前端应用，当然你可以自己配置，在package.json里
+npm start
+
+```
+另外，你要发布到生产上时，需要更改，config.js文件的配置
+
+***easycrm/config/config.js***
+
+```javascript
+ proxy: {
+    '/server/api/': {
+      target: 'https://preview.pro.ant.design/',
+      changeOrigin: true,
+      pathRewrite: { '^/server': '' },
+    },
+  },
+```
+
 
 
 ## 说在后面
 
 我将此系统开源出来，也希望方便大家使用。至那些爱自己妻子的程序员兄弟。
+有任何问题直接issue，感谢大家
