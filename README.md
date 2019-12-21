@@ -55,7 +55,7 @@ git clone https://github.com/GZ315200/easycrm.git
 cargo build --release && cd target/release/
 sudo ROCKET_ENV=prod ./easycrm-api
 ```
-App将在启动在[启动](http://localhost:80)，点击检查一下吧
+App将在启动在[http://localhost:80](http://localhost:80)，点击检查一下吧
 
 - 另外你可以在该目录下输入命令，运行后端项目
 ```
