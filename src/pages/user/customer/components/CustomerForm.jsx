@@ -6,6 +6,7 @@ export default function CustomerForm(props) {
 
   const [datetime, setDataTime] = useState('');
   const [name, setName] = useState('');
+  const [visable, setVisable] = useState(false);
 
   const onDateChange = (date, dateString) => {
     setDataTime(dateString);
