@@ -19,7 +19,7 @@ export default function CustomerModal(props) {
       footer={null}
       keyboard
     >
-      <CustomerForm formType={formType} />
+      <CustomerForm formType={formType} onHandleCancel={onHandleCancel} />
     </Modal>
   );
 }

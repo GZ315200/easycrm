@@ -1,23 +1,38 @@
-#![feature(proc_macro_hygiene, decl_macro)]
+#![feature(plugin)]
+#![plugin(rocket_codegen)]
+extern crate rocket;
+extern crate rocket_contrib;
 
 #[macro_use]
-extern crate rocket;
+extern crate diesel;
+#[macro_use]
+extern crate diesel_migrations;
+embed_migrations!("./migrations");
 
-#[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
-}
+extern crate serde;
+extern crate serde_json;
+#[macro_use]
+extern crate serde_derive;
 
-#[get("/hello/<name>/<age>/<cool>")]
-fn hello(name: String, age: u8, cool: bool) -> String {
-    if cool {
-        format!("You're a cool {} year old, {}!", age, name)
-    } else {
-        format!("{}, we need to talk about your coolness.", name)
-    }
-}
+extern crate r2d2_diesel;
+extern crate r2d2;
+
+mod schema;
+mod db;
+mod route;
+mod model;
+
+use self::route::user::*;
 
 fn main() {
-    rocket::ignite().mount("/", routes![index, hello])
+    let database_url = std::env::var("DATABASE_URL").expect("Database url must be set.");
+    let p = db::init(&database_url);
+    embedded_migrations::run(&*p.clone().get().expect("connection instance."))
+    .expect("Could run migrations");
+
+    rocket::ignite()
+    .manage(p)
+    .mount("/", [health])
     .launch();
+
 }
