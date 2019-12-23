@@ -75,7 +75,7 @@ npm install
 npm start
 
 ```
-另外，你要发布到生产上时，需要更改，config.js文件的配置
+另外，如果你要连接后端开发环境服务时，需要更改，config.js文件的配置
 
 ***easycrm/config/config.js***
 
