@@ -44,15 +44,15 @@ impl User {
         diesel::delete(users::table.find(id)).execute(connection).is_ok()
     }
 
-    pub fn login(username: &str, password: &str, connection: &MysqlConnection) -> UserVo {
-        let result = users::table.select(users::username.eq(username));
-        let username = String::from(username);
-        let token = "".to_string();
-        let is_admin = false;
-        return UserVo {
-            username,
-            is_admin,
-            token
-        }
-    }
+    // pub fn login(username: &str, password: &str, connection: &MysqlConnection) -> UserVo {
+    //     let result = users::table.select(users::username.eq(username));
+    //     let username = String::from(username);
+    //     let token = "".to_string();
+    //     let is_admin = false;
+    //     return UserVo {
+    //         username,
+    //         is_admin,
+    //         token
+    //     }
+    // }
 }

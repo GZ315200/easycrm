@@ -28,18 +28,18 @@ fn index() -> String {
 }
 
 #[post("/customer", data = "<customer>")]
-fn createCus(customer: Json<Customer>, connection: db::Connection) -> Json<Customer> {
+fn create_customer(customer: Json<Customer>, connection: db::Connection) -> Json<Customer> {
     let insert = Customer { ..customer.into_inner() };
     Json(Customer::create(insert, &connection))
 }
 
 #[get("/customer")]
-fn readCus(connection: db::Connection) -> Json<JsonValue> {
+fn read_customer(connection: db::Connection) -> Json<JsonValue> {
     Json(json!(Customer::read(&connection)))
 }
 
 #[put("/customer/<id>", data = "<customer>")]
-fn updateCus(id: i32, customer: Json<Customer>, connection: db::Connection) -> Json<JsonValue> {
+fn update_customer(id: i32, customer: Json<Customer>, connection: db::Connection) -> Json<JsonValue> {
     let update = Customer { id: id, ..customer.into_inner() };
     Json(json!({
         "success": Customer::update(id, update, &connection)
@@ -47,7 +47,7 @@ fn updateCus(id: i32, customer: Json<Customer>, connection: db::Connection) -> J
 }
 
 #[delete("/customer/<id>")]
-fn deleteCus(id: i32, connection: db::Connection) -> Json<JsonValue> {
+fn delete_customer(id: i32, connection: db::Connection) -> Json<JsonValue> {
     Json(json!({
         "success": Customer::delete(id, &connection)
     }))
@@ -55,18 +55,18 @@ fn deleteCus(id: i32, connection: db::Connection) -> Json<JsonValue> {
 
 
 #[post("/progress", data = "<progress>")]
-fn createProg(progress: Json<Progress>, connection: db::Connection) -> Json<Progress> {
+fn create_progress(progress: Json<Progress>, connection: db::Connection) -> Json<Progress> {
     let insert = Progress { ..progress.into_inner() };
     Json(Progress::create(insert, &connection))
 }
 
 #[get("/progress")]
-fn readProg(connection: db::Connection) -> Json<JsonValue> {
+fn read_progress(connection: db::Connection) -> Json<JsonValue> {
     Json(json!(Progress::read(&connection)))
 }
 
 #[put("/progress/<id>", data = "<progress>")]
-fn updateProg(id: i32, progress: Json<Progress>, connection: db::Connection) -> Json<JsonValue> {
+fn update_progress(id: i32, progress: Json<Progress>, connection: db::Connection) -> Json<JsonValue> {
     let update = Progress { id: id, ..progress.into_inner() };
     Json(json!({
         "success": Progress::update(id, update, &connection)
@@ -74,7 +74,7 @@ fn updateProg(id: i32, progress: Json<Progress>, connection: db::Connection) -> 
 }
 
 #[delete("/progress/<id>")]
-fn deleteProg(id: i32, connection: db::Connection) -> Json<JsonValue> {
+fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
     Json(json!({
         "success": Progress::delete(id, &connection)
     }))
@@ -90,7 +90,7 @@ fn deleteProg(id: i32, connection: db::Connection) -> Json<JsonValue> {
 fn main() {
     rocket::ignite()
     .mount("/", routes![index])
-    .mount("/api", routes![createCus, readCus, updateCus, deleteCus, createProg,readProg, updateProg, deleteProg])
+    .mount("/api/v1", routes![create_customer, read_customer, update_customer, delete_customer, create_progress,read_progress, update_progress, delete_progress])
     .manage(db::connect())
     .launch();
 }
