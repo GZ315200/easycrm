@@ -90,7 +90,7 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
 fn main() {
     rocket::ignite()
     .mount("/", routes![index])
-    .mount("/api", routes![create_customer, read_customer, update_customer, delete_customer, create_progress,read_progress, update_progress, delete_progress])
+    .mount("/api/v1", routes![create_customer, read_customer, update_customer, delete_customer, create_progress,read_progress, update_progress, delete_progress])
     .manage(db::connect())
     .launch();
 }
