@@ -11,7 +11,7 @@ mod progress;
 mod users;
 use customers::{Customer};
 use progress::{Progress};
-// use users::{User};
+use users::{User, UserLogin};
 
 
 #[macro_use]
@@ -80,10 +80,11 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
     }))
 }
 
-// #[post("/login")]
-// fn login(user: Json<User>, connection: db::Connection) -> Json<User> {
+// #[post("/login", format = "json", data = "<user>")]
+// fn login(user: Json<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
+//     let login = UserLogin { ..user.into_inner() };
 //     Json(json!({
-//         "success": User::read(connection)
+//         "success": User::login(login, &connection)
 //     }))
 // }
 

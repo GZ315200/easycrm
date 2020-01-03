@@ -14,11 +14,17 @@ pub struct User {
     pub token: String,
 }
 
-#[derive(Deserialize, Queryable)]
+#[derive(Deserialize, Serialize, Debug)]
 pub struct UserVo {
     pub username: String,
     pub is_admin: bool,
     pub token: String
+}
+
+#[derive(Deserialize, Serialize, Queryable, Clone, Debug)]
+pub struct UserLogin {
+    pub username: Option<String>,
+    pub password: Option<String>,
 }
 
 impl User {
@@ -44,9 +50,9 @@ impl User {
         diesel::delete(users::table.find(id)).execute(connection).is_ok()
     }
 
-    // pub fn login(username: &str, password: &str, connection: &MysqlConnection) -> UserVo {
+    // pub fn login(login: UserLogin, connection: &MysqlConnection) -> UserVo {
+    //     let UserLogin { String, String } = login;
     //     let result = users::table.select(users::username.eq(username));
-    //     let username = String::from(username);
     //     let token = "".to_string();
     //     let is_admin = false;
     //     return UserVo {
