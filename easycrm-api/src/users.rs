@@ -14,17 +14,11 @@ pub struct User {
     pub token: String,
 }
 
-#[derive(Deserialize, Serialize, Debug)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct UserVo {
-    pub username: String,
+    pub name: String,
     pub is_admin: bool,
     pub token: String
-}
-
-#[derive(Deserialize, Serialize, Queryable, Clone, Debug)]
-pub struct UserLogin {
-    pub username: Option<String>,
-    pub password: Option<String>,
 }
 
 impl User {
@@ -50,15 +44,20 @@ impl User {
         diesel::delete(users::table.find(id)).execute(connection).is_ok()
     }
 
-    // pub fn login(login: UserLogin, connection: &MysqlConnection) -> UserVo {
-    //     let UserLogin { String, String } = login;
-    //     let result = users::table.select(users::username.eq(username));
-    //     let token = "".to_string();
-    //     let is_admin = false;
-    //     return UserVo {
-    //         username,
-    //         is_admin,
-    //         token
-    //     }
-    // }
+
+    pub fn find_username(username: String, connection: &MysqlConnection) -> bool {
+        let sql: String = format!("select count(*) from users where username='${}'", username);
+        match connection.execute(&sql).unwrap() {
+            1 => return true,
+            _ => return false
+        };
+    }
+
+    pub fn find_password(password: String, connection: &MysqlConnection) -> bool {
+        let sql: String = format!("select count(*) from users where password='${}'", format!("{:x}",md5::compute(password)));
+        match connection.execute(&sql).unwrap() {
+            1 => return true,
+            _ => return false
+        };
+    }
 }

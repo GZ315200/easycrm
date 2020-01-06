@@ -5,14 +5,13 @@
 #[macro_use] extern crate serde_derive;
 
 use rocket_contrib::json::{Json, JsonValue};
+use rocket::request::Form;
 
 mod customers;
 mod progress;
 mod users;
 use customers::{Customer};
 use progress::{Progress};
-use users::{User, UserLogin};
-
 
 #[macro_use]
 extern crate diesel;
@@ -81,7 +80,7 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
 }
 
 // #[post("/login", format = "json", data = "<user>")]
-// fn login(user: Json<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
+// fn login(user: Form<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
 //     let login = UserLogin { ..user.into_inner() };
 //     Json(json!({
 //         "success": User::login(login, &connection)
