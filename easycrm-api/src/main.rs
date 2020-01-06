@@ -1,17 +1,20 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 
-#[macro_use] extern crate rocket;
-#[macro_use] extern crate rocket_contrib;
-#[macro_use] extern crate serde_derive;
+#[macro_use]
+extern crate rocket;
+#[macro_use]
+extern crate rocket_contrib;
+#[macro_use]
+extern crate serde_derive;
 
-use rocket_contrib::json::{Json, JsonValue};
 use rocket::request::Form;
+use rocket_contrib::json::{Json, JsonValue};
 
 mod customers;
 mod progress;
 mod users;
-use customers::{Customer};
-use progress::{Progress};
+use customers::Customer;
+use progress::Progress;
 
 #[macro_use]
 extern crate diesel;
@@ -28,7 +31,9 @@ fn index() -> String {
 
 #[post("/customer", data = "<customer>")]
 fn create_customer(customer: Json<Customer>, connection: db::Connection) -> Json<Customer> {
-    let insert = Customer { ..customer.into_inner() };
+    let insert = Customer {
+        ..customer.into_inner()
+    };
     Json(Customer::create(insert, &connection))
 }
 
@@ -38,8 +43,15 @@ fn read_customer(connection: db::Connection) -> Json<JsonValue> {
 }
 
 #[put("/customer/<id>", data = "<customer>")]
-fn update_customer(id: i32, customer: Json<Customer>, connection: db::Connection) -> Json<JsonValue> {
-    let update = Customer { id: id, ..customer.into_inner() };
+fn update_customer(
+    id: i32,
+    customer: Json<Customer>,
+    connection: db::Connection,
+) -> Json<JsonValue> {
+    let update = Customer {
+        id: id,
+        ..customer.into_inner()
+    };
     Json(json!({
         "success": Customer::update(id, update, &connection)
     }))
@@ -47,15 +59,14 @@ fn update_customer(id: i32, customer: Json<Customer>, connection: db::Connection
 
 #[delete("/customer/<id>")]
 fn delete_customer(id: i32, connection: db::Connection) -> Json<JsonValue> {
-    Json(json!({
-        "success": Customer::delete(id, &connection)
-    }))
+    Json(json!({ "success": Customer::delete(id, &connection) }))
 }
-
 
 #[post("/progress", data = "<progress>")]
 fn create_progress(progress: Json<Progress>, connection: db::Connection) -> Json<Progress> {
-    let insert = Progress { ..progress.into_inner() };
+    let insert = Progress {
+        ..progress.into_inner()
+    };
     Json(Progress::create(insert, &connection))
 }
 
@@ -65,8 +76,15 @@ fn read_progress(connection: db::Connection) -> Json<JsonValue> {
 }
 
 #[put("/progress/<id>", data = "<progress>")]
-fn update_progress(id: i32, progress: Json<Progress>, connection: db::Connection) -> Json<JsonValue> {
-    let update = Progress { id: id, ..progress.into_inner() };
+fn update_progress(
+    id: i32,
+    progress: Json<Progress>,
+    connection: db::Connection,
+) -> Json<JsonValue> {
+    let update = Progress {
+        id: id,
+        ..progress.into_inner()
+    };
     Json(json!({
         "success": Progress::update(id, update, &connection)
     }))
@@ -74,9 +92,7 @@ fn update_progress(id: i32, progress: Json<Progress>, connection: db::Connection
 
 #[delete("/progress/<id>")]
 fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
-    Json(json!({
-        "success": Progress::delete(id, &connection)
-    }))
+    Json(json!({ "success": Progress::delete(id, &connection) }))
 }
 
 // #[post("/login", format = "json", data = "<user>")]
@@ -89,8 +105,20 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
 
 fn main() {
     rocket::ignite()
-    .mount("/", routes![index])
-    .mount("/api/v1", routes![create_customer, read_customer, update_customer, delete_customer, create_progress,read_progress, update_progress, delete_progress])
-    .manage(db::connect())
-    .launch();
+        .mount("/", routes![index])
+        .mount(
+            "/api/v1",
+            routes![
+                create_customer,
+                read_customer,
+                update_customer,
+                delete_customer,
+                create_progress,
+                read_progress,
+                update_progress,
+                delete_progress
+            ],
+        )
+        .manage(db::connect())
+        .launch();
 }
