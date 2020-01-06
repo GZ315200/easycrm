@@ -7,7 +7,6 @@ extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 
-use rocket::request::Form;
 use rocket_contrib::json::{Json, JsonValue};
 
 mod customers;

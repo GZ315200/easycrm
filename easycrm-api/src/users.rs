@@ -53,7 +53,7 @@ impl User {
     }
 
     pub fn find_username(username: String, connection: &MysqlConnection) -> bool {
-        let sql: String = format!("select count(*) from users where username='${}'", username);
+        let sql: String = format!("select count(*) from users where username='{}'", username);
         match connection.execute(&sql).unwrap() {
             1 => return true,
             _ => return false,
@@ -62,7 +62,7 @@ impl User {
 
     pub fn find_password(password: String, connection: &MysqlConnection) -> bool {
         let sql: String = format!(
-            "select count(*) from users where password='${}'",
+            "select count(*) from users where password='{}'",
             format!("{:x}", md5::compute(password))
         );
         match connection.execute(&sql).unwrap() {
