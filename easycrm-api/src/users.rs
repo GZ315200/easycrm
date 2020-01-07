@@ -52,6 +52,10 @@ impl User {
             .is_ok()
     }
 
+    pub fn find_user_by_id(id: i32, conn: &MysqlConnection) -> User {
+        users::table.find(id).first(conn).unwrap()
+    }
+
     pub fn find_username(username: String, connection: &MysqlConnection) -> bool {
         let sql: String = format!("select count(*) from users where username='{}'", username);
         match connection.execute(&sql).unwrap() {
