@@ -122,7 +122,8 @@ fn main() {
                 create_progress,
                 read_progress,
                 update_progress,
-                delete_progress
+                delete_progress,
+                login,
             ],
         )
         .manage(db::connect())
