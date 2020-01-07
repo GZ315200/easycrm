@@ -31,7 +31,7 @@ impl User {
         diesel::insert_into(users::table)
             .values(&user)
             .execute(connection)
-            .expect("Error creating new hero");
+            .expect("Error creating new user");
         users::table
             .order(users::id.desc())
             .first(connection)
@@ -71,13 +71,13 @@ impl User {
                 token: result.token,
             };
         } else {
-            panic!("账号和密码不对")
+            panic!("username or password is not correct")
         }
     }
 
     fn find_user_by_username(username: &String, conn: &MysqlConnection) -> User {
         users::table
-            .filter(users::username.eq(&username))
+            .filter(users::username.eq(username))
             .first(conn)
             .unwrap()
     }

@@ -101,6 +101,15 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
     }))
 }
 
+#[post("/user", data = "<user>")]
+fn create_user(user: Json<User>, connection: db::Connection) -> Json<User> {
+    let insert = User {
+        ..user.into_inner()
+    };
+    Json(User::create(insert, &connection))
+}
+
+
 #[post("/login", data = "<user>")]
 fn login(user: Json<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
     let login = UserLogin { ..user.into_inner() };
@@ -124,6 +133,7 @@ fn main() {
                 update_progress,
                 delete_progress,
                 login,
+                create_user
             ],
         )
         .manage(db::connect())

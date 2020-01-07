@@ -29,7 +29,7 @@ impl Customer {
         diesel::insert_into(customers::table)
             .values(&customer)
             .execute(connection)
-            .expect("Error creating new hero");
+            .expect("Error creating new customer");
 
         customers::table
             .order(customers::id.desc())

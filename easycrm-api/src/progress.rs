@@ -21,7 +21,7 @@ impl Progress {
         diesel::insert_into(progress::table)
             .values(&prog)
             .execute(connection)
-            .expect("Error creating new hero");
+            .expect("Error creating new progress");
 
         progress::table
             .order(progress::id.desc())
