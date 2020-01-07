@@ -15,9 +15,15 @@ pub struct User {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct UserVo {
-    pub name: String,
+    pub username: String,
     pub is_admin: bool,
     pub token: String,
+}
+
+#[derive(Serialize, Deserialize)]
+pub struct UserLogin {
+    pub usernmae: String,
+    pub password: String,
 }
 
 impl User {
@@ -52,19 +58,40 @@ impl User {
             .is_ok()
     }
 
-    pub fn find_user_by_id(id: i32, conn: &MysqlConnection) -> User {
-        users::table.find(id).first(conn).unwrap()
-    }
-
-    pub fn find_username(username: String, connection: &MysqlConnection) -> bool {
-        let sql: String = format!("select count(*) from users where username='{}'", username);
-        match connection.execute(&sql).unwrap() {
-            1 => return true,
-            _ => return false,
+    pub fn login(user: UserLogin, conn: &MysqlConnection) -> UserVo {
+        let username = &user.usernmae;
+        let password = &user.password;
+        let is_find_username: bool = User::find_username(username, conn);
+        let is_find_password: bool = User::find_password(password, conn);
+        if is_find_username && is_find_password {
+            let result = User::find_user_by_username(username, conn);
+            return UserVo {
+                username: result.username,
+                is_admin: result.is_admin,
+                token: result.token,
+            };
+        } else {
+            panic!("账号和密码不对")
         }
     }
 
-    pub fn find_password(password: String, connection: &MysqlConnection) -> bool {
+    fn find_user_by_username(username: &String, conn: &MysqlConnection) -> User {
+        users::table
+            .filter(users::username.eq(&username))
+            .first(conn)
+            .unwrap()
+    }
+
+    fn find_username(username: &String, connection: &MysqlConnection) -> bool {
+        let sql: String = format!("select count(*) from users where username='{}'", username);
+        let find = match connection.execute(&sql).unwrap() {
+            1 => true,
+            _ => false,
+        };
+        find
+    }
+
+    fn find_password(password: &String, connection: &MysqlConnection) -> bool {
         let sql: String = format!(
             "select count(*) from users where password='{}'",
             format!("{:x}", md5::compute(password))

@@ -14,6 +14,7 @@ mod progress;
 mod users;
 use customers::Customer;
 use progress::Progress;
+use users::{User, UserLogin};
 
 #[macro_use]
 extern crate diesel;
@@ -58,7 +59,9 @@ fn update_customer(
 
 #[delete("/customer/<id>")]
 fn delete_customer(id: i32, connection: db::Connection) -> Json<JsonValue> {
-    Json(json!({ "success": Customer::delete(id, &connection) }))
+    Json(json!({
+        "success": Customer::delete(id, &connection)
+    }))
 }
 
 #[post("/progress", data = "<progress>")]
@@ -71,7 +74,9 @@ fn create_progress(progress: Json<Progress>, connection: db::Connection) -> Json
 
 #[get("/progress")]
 fn read_progress(connection: db::Connection) -> Json<JsonValue> {
-    Json(json!(Progress::read(&connection)))
+    Json(json!(
+        Progress::read(&connection)
+    ))
 }
 
 #[put("/progress/<id>", data = "<progress>")]
@@ -91,16 +96,18 @@ fn update_progress(
 
 #[delete("/progress/<id>")]
 fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
-    Json(json!({ "success": Progress::delete(id, &connection) }))
+    Json(json!({
+        "success": Progress::delete(id, &connection)
+    }))
 }
 
-// #[post("/login", format = "json", data = "<user>")]
-// fn login(user: Form<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
-//     let login = UserLogin { ..user.into_inner() };
-//     Json(json!({
-//         "success": User::login(login, &connection)
-//     }))
-// }
+#[post("/login", data = "<user>")]
+fn login(user: Json<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
+    let login = UserLogin { ..user.into_inner() };
+    Json(json!({
+        "success": User::login(login, &connection)
+    }))
+}
 
 fn main() {
     rocket::ignite()
