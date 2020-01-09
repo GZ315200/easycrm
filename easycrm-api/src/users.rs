@@ -84,11 +84,10 @@ impl User {
 
     fn find_username(username: &String, connection: &MysqlConnection) -> bool {
         let sql: String = format!("select count(*) from users where username='{}'", username);
-        let find = match connection.execute(&sql).unwrap() {
-            1 => true,
-            _ => false,
-        };
-        find
+        match connection.execute(&sql).unwrap() {
+            1 => return true,
+            _ => return false,
+        }
     }
 
     fn find_password(password: &String, connection: &MysqlConnection) -> bool {
