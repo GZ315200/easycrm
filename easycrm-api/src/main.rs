@@ -7,7 +7,7 @@ extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 
-use rocket::http::Cookies;
+use rocket::http::{Cookie, Cookies};
 use rocket_contrib::json::{Json, JsonValue};
 
 mod customers;
@@ -15,7 +15,7 @@ mod progress;
 mod users;
 use customers::Customer;
 use progress::Progress;
-use users::{User, UserLogin};
+use users::{User, UserLogin, UserVo};
 
 #[macro_use]
 extern crate diesel;
