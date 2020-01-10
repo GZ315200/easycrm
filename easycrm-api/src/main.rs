@@ -7,6 +7,7 @@ extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 
+use rocket::http::Cookies;
 use rocket_contrib::json::{Json, JsonValue};
 
 mod customers;
@@ -104,11 +105,27 @@ fn create_user(user: Json<User>, connection: db::Connection) -> Json<User> {
 }
 
 #[post("/login", data = "<user>")]
-fn login(user: Json<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
-    let login = UserLogin {
-        ..user.into_inner()
-    };
-    Json(json!({ "success": User::login(login, &connection) }))
+fn login(
+    user: Json<UserLogin>,
+    mut cookies: Cookies,
+    connection: db::Connection,
+) -> Json<JsonValue> {
+    let cookie = cookies.get("token");
+    if cookie.is_some() {
+        return Json(json!({
+            "code": 200 ,
+            "msg": "this user has already loggined."
+        }));
+    } else {
+        let login = UserLogin {
+            ..user.into_inner()
+        };
+        let user_data: UserVo = User::login(login, &connection);
+        if !&user_data.token.is_empty() {
+            cookies.add(Cookie::new("token", user_data.token.clone()));
+        };
+        return Json(json!({ "success": &user_data }));
+    }
 }
 
 fn main() {
