@@ -97,14 +97,24 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
 }
 
 #[post("/user", data = "<user>")]
-fn create_user(user: Json<User>, mut cookies: Cookies, connection: db::Connection) -> Json<User> {
+fn create_user(
+    user: Json<User>,
+    mut cookies: Cookies,
+    connection: db::Connection,
+) -> Json<JsonValue> {
     let token: &Cookie = cookies.get("token").unwrap();
     let value = &token.value();
-    if value.is_empty() {}
-    let insert = User {
-        ..user.into_inner()
-    };
-    Json(User::create(insert, &connection))
+    if value.is_empty() {
+        return Json(json!({
+            "success": false ,
+            "msg": "this user has already loggined."
+        }));
+    } else {
+        let insert = User {
+            ..user.into_inner()
+        };
+        Json(json!(User::create(insert, &connection)))
+    }
 }
 
 #[post("/login", data = "<user>")]
@@ -116,7 +126,7 @@ fn login(
     let cookie = cookies.get("token");
     if cookie.is_some() {
         return Json(json!({
-            "code": 200 ,
+            "success": false ,
             "msg": "this user has already loggined."
         }));
     } else {
