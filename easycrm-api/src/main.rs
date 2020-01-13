@@ -7,7 +7,7 @@ extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 
-use rocket::http::{Cookie, Cookies, Header};
+use rocket::http::{Cookie, Cookies};
 use rocket_contrib::json::{Json, JsonValue};
 
 mod customers;
@@ -31,16 +31,22 @@ fn index() -> String {
 }
 
 #[post("/customer", data = "<customer>")]
-fn create_customer(customer: Json<Customer>, connection: db::Connection) -> Json<Customer> {
+fn create_customer(customer: Json<Customer>, connection: db::Connection) -> Json<JsonValue> {
     let insert = Customer {
         ..customer.into_inner()
     };
-    Json(Customer::create(insert, &connection))
+    return Json(json!({
+        "success": true,
+        "data": Customer::create(insert, &connection)
+    }));
 }
 
 #[get("/customer")]
 fn read_customer(connection: db::Connection) -> Json<JsonValue> {
-    Json(json!(Customer::read(&connection)))
+    return Json(json!({
+        "success": true,
+        "data": Customer::read(&connection)
+    }));
 }
 
 #[put("/customer/<id>", data = "<customer>")]
@@ -53,9 +59,7 @@ fn update_customer(
         id: id,
         ..customer.into_inner()
     };
-    Json(json!({
-        "success": Customer::update(id, update, &connection)
-    }))
+    Json(json!({ "data": Customer::update(id, update, &connection) }))
 }
 
 #[delete("/customer/<id>")]
@@ -64,16 +68,22 @@ fn delete_customer(id: i32, connection: db::Connection) -> Json<JsonValue> {
 }
 
 #[post("/progress", data = "<progress>")]
-fn create_progress(progress: Json<Progress>, connection: db::Connection) -> Json<Progress> {
+fn create_progress(progress: Json<Progress>, connection: db::Connection) -> Json<JsonValue> {
     let insert = Progress {
         ..progress.into_inner()
     };
-    Json(Progress::create(insert, &connection))
+    return Json(json!({
+        "success": true,
+        "data": Progress::create(insert, &connection)
+    }));
 }
 
 #[get("/progress")]
 fn read_progress(connection: db::Connection) -> Json<JsonValue> {
-    Json(json!(Progress::read(&connection)))
+    return Json(json!({
+        "success": true,
+        "data": Progress::read(&connection)
+    }));
 }
 
 #[put("/progress/<id>", data = "<progress>")]
@@ -86,14 +96,12 @@ fn update_progress(
         id: id,
         ..progress.into_inner()
     };
-    Json(json!({
-        "success": Progress::update(id, update, &connection)
-    }))
+    Json(json!({ "data": Progress::update(id, update, &connection) }))
 }
 
 #[delete("/progress/<id>")]
 fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
-    Json(json!({ "success": Progress::delete(id, &connection) }))
+    Json(json!({ "data": Progress::delete(id, &connection) }))
 }
 
 #[post("/user", data = "<user>")]
@@ -113,7 +121,10 @@ fn create_user(
         let insert = User {
             ..user.into_inner()
         };
-        Json(json!(User::create(insert, &connection)))
+        return Json(json!({
+            "success": true ,
+            "data": User::create(insert, &connection)
+        }));
     }
 }
 
@@ -134,12 +145,13 @@ fn login(
             ..user.into_inner()
         };
         let user_data: UserVo = User::login(login, &connection);
-        // let admin = if user_data.is_admin { "true" } else { "false" };
         if !&user_data.token.is_empty() {
-            // cookies.add(Cookie::new("is_admin", admin));
             cookies.add(Cookie::new("token", user_data.token.clone()));
         };
-        return Json(json!({ "success": &user_data }));
+        return Json(json!({
+            "success": true,
+            "data": &user_data
+        }));
     }
 }
 
