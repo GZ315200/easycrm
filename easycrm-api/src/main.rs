@@ -7,6 +7,7 @@ extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 
+use rocket::http::{Cookie, Cookies, Header};
 use rocket_contrib::json::{Json, JsonValue};
 
 mod customers;
@@ -14,7 +15,7 @@ mod progress;
 mod users;
 use customers::Customer;
 use progress::Progress;
-use users::{User, UserLogin};
+use users::{User, UserLogin, UserVo};
 
 #[macro_use]
 extern crate diesel;
@@ -96,19 +97,56 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
 }
 
 #[post("/user", data = "<user>")]
-fn create_user(user: Json<User>, connection: db::Connection) -> Json<User> {
-    let insert = User {
-        ..user.into_inner()
-    };
-    Json(User::create(insert, &connection))
+fn create_user(
+    user: Json<User>,
+    mut cookies: Cookies,
+    connection: db::Connection,
+) -> Json<JsonValue> {
+    let token: &Cookie = cookies.get("token").unwrap();
+    let value = &token.value();
+    if value.is_empty() {
+        return Json(json!({
+            "success": false ,
+            "msg": "this user has already loggined."
+        }));
+    } else {
+        let insert = User {
+            ..user.into_inner()
+        };
+        Json(json!(User::create(insert, &connection)))
+    }
 }
 
 #[post("/login", data = "<user>")]
-fn login(user: Json<UserLogin>, connection: db::Connection) -> Json<JsonValue> {
-    let login = UserLogin {
-        ..user.into_inner()
-    };
-    Json(json!({ "success": User::login(login, &connection) }))
+fn login(
+    user: Json<UserLogin>,
+    mut cookies: Cookies,
+    connection: db::Connection,
+) -> Json<JsonValue> {
+    let cookie = cookies.get("token");
+    if cookie.is_some() {
+        return Json(json!({
+            "success": false ,
+            "msg": "this user has already loggined."
+        }));
+    } else {
+        let login = UserLogin {
+            ..user.into_inner()
+        };
+        let user_data: UserVo = User::login(login, &connection);
+        // let admin = if user_data.is_admin { "true" } else { "false" };
+        if !&user_data.token.is_empty() {
+            // cookies.add(Cookie::new("is_admin", admin));
+            cookies.add(Cookie::new("token", user_data.token.clone()));
+        };
+        return Json(json!({ "success": &user_data }));
+    }
+}
+
+#[post("/logout")]
+fn logout(mut cookies: Cookies) -> Json<JsonValue> {
+    cookies.remove(Cookie::named("token"));
+    return Json(json!( { "success": true } ));
 }
 
 fn main() {
@@ -126,6 +164,7 @@ fn main() {
                 update_progress,
                 delete_progress,
                 login,
+                logout,
                 create_user
             ],
         )
