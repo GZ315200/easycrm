@@ -7,7 +7,7 @@ extern crate rocket_contrib;
 #[macro_use]
 extern crate serde_derive;
 
-use rocket::http::{Cookie, Cookies};
+use rocket::http::{Cookie, Cookies, Header};
 use rocket_contrib::json::{Json, JsonValue};
 
 mod customers;
@@ -97,7 +97,10 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
 }
 
 #[post("/user", data = "<user>")]
-fn create_user(user: Json<User>, connection: db::Connection) -> Json<User> {
+fn create_user(user: Json<User>, mut cookies: Cookies, connection: db::Connection) -> Json<User> {
+    let token: &Cookie = cookies.get("token").unwrap();
+    let value = &token.value();
+    if value.is_empty() {}
     let insert = User {
         ..user.into_inner()
     };
@@ -121,11 +124,22 @@ fn login(
             ..user.into_inner()
         };
         let user_data: UserVo = User::login(login, &connection);
+        let admin = if user_data.is_admin { "true" } else { "false" };
         if !&user_data.token.is_empty() {
+            cookies.add(Cookie::new("is_admin", admin));
             cookies.add(Cookie::new("token", user_data.token.clone()));
         };
         return Json(json!({ "success": &user_data }));
     }
+}
+
+fn handler(mut cookies: Cookies) {
+    cookies.add(Cookie::new("name", "value"));
+    let cookie = Cookie::build("name", "value")
+        .path("/")
+        .secure(true)
+        .finish();
+    cookies.add(cookie);
 }
 
 fn main() {
