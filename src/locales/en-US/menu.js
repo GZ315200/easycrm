@@ -48,4 +48,7 @@ export default {
   'menu.editor.flow': 'Flow Editor',
   'menu.editor.mind': 'Mind Editor',
   'menu.editor.koni': 'Koni Editor',
+  'menu.customer': 'customer',
+  'menu.customer.info': 'customer info',
+  'menu.customer.demands': 'customer demands',
 };

@@ -9,26 +9,41 @@ class SearchContext extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchValue: null,
+      searchValue: '',
       placeholder: '',
+      searchType: 0,
     };
     const { route } = this.props;
     if (route.path === PathName.MENU_INFO) {
       this.state.placeholder = '请输入客户名称/手机';
+      this.searchType = 0;
     }
     if (route.path === PathName.MENU_DEMANDS) {
       this.state.placeholder = '请输入客户名称';
+      this.searchType = 1;
     }
   }
 
-  onChange = value => {
+  onChange = e => {
     this.setState({
-      searchValue: value,
+      searchValue: e.target.value,
     });
   };
 
   onClickSearch = () => {
-    const { searchValue } = this.state;
+    const { searchValue, searchType } = this.state;
+    if (searchType === 0) {
+      /**
+       * todo
+       */
+      console.log('search the text for consumer infos');
+    }
+    if (searchType === 1) {
+       /**
+       * todo
+       */
+      console.log('searhc the text for consumer demands');
+    }
   };
 
   render() {

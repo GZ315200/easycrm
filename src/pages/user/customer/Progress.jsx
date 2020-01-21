@@ -1,26 +1,39 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 // import { connect } from 'dva';
 import { Table } from 'antd';
 import style from './index.less';
 import SearchContext from './components/SearchContext';
 import TableOperation from './components/TableOperation';
+import { getAllCustomerDemands } from '../../../services/customer';
+import { errorHandler } from '../../../utils/request'
 
-class Progress extends PureComponent {
+class Progress extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      dataSource: [],
+    }
+  }
+
+  componentDidMount = () => {
+    this.getDatasource();
+  }
+
+  getDatasource = () => {
+    getAllCustomerDemands()
+      .then(res => {
+        const sourcedata = res.data
+        this.setState({
+          dataSource: sourcedata,
+        })
+      })
+      .catch(err => {
+        errorHandler(err)
+      });
+  };
+
   render() {
-    const dataSource = [
-      {
-        key: '3',
-        name: '胡彦斌',
-        age: 32,
-        address: '西湖区湖底公园1号',
-      },
-      {
-        key: '4',
-        name: '胡彦祖',
-        age: 42,
-        address: '西湖区湖底公园1号',
-      },
-    ];
+    const { dataSource } = this.state
 
     const operate = (text, record) => <TableOperation record={record} {...this.props} />;
 
