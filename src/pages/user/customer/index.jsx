@@ -1,26 +1,38 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 // import { connect } from 'dva';
 import { Table } from 'antd';
 import style from './index.less';
 import SearchContext from './components/SearchContext';
 import TableOperation from './components/TableOperation';
+import { getAllCustomerInfo } from '../../../services/customer';
+import { errorHandler } from '../../../utils/request';
 
-class Custom extends PureComponent {
+
+class Custom extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      dataSource: [],
+    }
+  }
+
+  componentDidMount = () => {
+    this.getConsumerInfo()
+  }
+
+  getConsumerInfo = () => {
+    getAllCustomerInfo().then(res => {
+      const realData = res.data;
+      this.setState({
+        dataSource: realData,
+      })
+    }).catch(error => {
+      errorHandler(error)
+    })
+  }
+
   render() {
-    const dataSource = [
-      {
-        key: '1',
-        name: '胡彦斌',
-        age: 32,
-        address: '西湖区湖底公园1号',
-      },
-      {
-        key: '2',
-        name: '胡彦祖',
-        age: 42,
-        address: '西湖区湖底公园1号',
-      },
-    ];
+    const { dataSource } = this.state;
 
     const operate = (text, record) => <TableOperation record={record} {...this.props} />;
 
