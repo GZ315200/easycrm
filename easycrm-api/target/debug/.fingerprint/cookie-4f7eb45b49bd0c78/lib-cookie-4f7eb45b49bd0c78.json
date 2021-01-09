@@ -1,0 +1,20 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"percent-encode\", \"percent-encoding\"]",
+  "target": 10249432304785400613,
+  "profile": 9935990280773120926,
+  "path": 18153521496371884118,
+  "deps": [
+    [3518880246508676464, "time", false, 16016036974896141089],
+    [15548764325946461229, "percent_encoding", false, 10432287679605635925]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/cookie-4f7eb45b49bd0c78/dep-lib-cookie-4f7eb45b49bd0c78"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 15579604395143999902
+}

@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"mysql\", \"uses_information_schema\"]",
+  "target": 16456850218294737779,
+  "profile": 6299028598154287785,
+  "path": 15591287139740048202,
+  "deps": [[1589978111824768747, "diesel", false, 4338794412795778581]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/diesel_infer_schema-9e62671fa4a4d196/dep-lib-diesel_infer_schema"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 4452463665649061447,
+  "config": 0
+}

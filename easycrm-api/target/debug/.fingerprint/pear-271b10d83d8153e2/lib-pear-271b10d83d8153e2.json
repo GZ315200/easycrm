@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 5968318558635260204,
+  "profile": 9935990280773120926,
+  "path": 8636397177614802252,
+  "deps": [[10778069361654192772, "pear_codegen", false, 12173570237957465506]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/pear-271b10d83d8153e2/dep-lib-pear-271b10d83d8153e2"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 8590260902989822914
+}

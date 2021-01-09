@@ -1,0 +1,21 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"aster\", \"default\", \"full\", \"parsing\", \"printing\", \"quote\", \"synom\", \"unicode-xid\"]",
+  "target": 17778654564605469173,
+  "profile": 9935990280773120926,
+  "path": 10529782035148218434,
+  "deps": [
+    [1705814539359939414, "synom", false, 660498357743452100],
+    [8181095935280535816, "quote", false, 5137654822750285116],
+    [14876866764877003795, "unicode_xid", false, 16871193623720358234]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/syn-9c8e16c638617b5e/dep-lib-syn-9c8e16c638617b5e"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 552949256022020544
+}

@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 429242505488404198,
+  "profile": 9935990280773120926,
+  "path": 12567123777033764713,
+  "deps": [[12962981185258070600, "log", false, 15284908493300230889]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/mime-02f1019966aefd72/dep-lib-mime-02f1019966aefd72"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 3909295356866236909
+}

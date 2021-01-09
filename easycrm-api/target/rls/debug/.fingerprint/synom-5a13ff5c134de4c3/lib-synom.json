@@ -1,0 +1,14 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 7409723576147822178,
+  "profile": 6299028598154287785,
+  "path": 14434697807051665618,
+  "deps": [[14876866764877003795, "unicode_xid", false, 3456752098756888781]],
+  "local": [
+    { "CheckDepInfo": { "dep_info": "debug/.fingerprint/synom-5a13ff5c134de4c3/dep-lib-synom" } }
+  ],
+  "rustflags": [],
+  "metadata": 14594284269098391341,
+  "config": 0
+}

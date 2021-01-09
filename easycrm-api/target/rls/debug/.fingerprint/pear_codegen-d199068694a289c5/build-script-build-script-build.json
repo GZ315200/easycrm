@@ -1,0 +1,21 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 10088282520713642473,
+  "profile": 6299028598154287785,
+  "path": 12361445955930202153,
+  "deps": [
+    [524727787372165186, "yansi", false, 5489427456940578473],
+    [13855371118854453264, "version_check", false, 7149108806290310957]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/pear_codegen-d199068694a289c5/dep-build-script-build-script-build"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 18239697957361571595,
+  "config": 0
+}

@@ -1,0 +1,11 @@
+/Users/oyo02699/apps/easycrm/easycrm-api/target/debug/deps/state-4735a3b458ff5a8e.rmeta: /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/lib.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/ident_hash.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/container.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/storage.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/init.rs
+
+/Users/oyo02699/apps/easycrm/easycrm-api/target/debug/deps/libstate-4735a3b458ff5a8e.rlib: /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/lib.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/ident_hash.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/container.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/storage.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/init.rs
+
+/Users/oyo02699/apps/easycrm/easycrm-api/target/debug/deps/state-4735a3b458ff5a8e.d: /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/lib.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/ident_hash.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/container.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/storage.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/init.rs
+
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/lib.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/ident_hash.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/container.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/storage.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/state-0.4.2/src/init.rs:

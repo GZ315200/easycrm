@@ -1,0 +1,1285 @@
+{
+  "config": {
+    "output_file": null,
+    "full_docs": false,
+    "pub_only": true,
+    "reachable_only": true,
+    "distro_crate": false,
+    "signatures": false,
+    "borrow_data": false
+  },
+  "version": "0.19.0",
+  "compilation": {
+    "directory": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1",
+    "program": "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rls",
+    "arguments": [
+      "--crate-name",
+      "dotenv",
+      "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+      "--json=diagnostic-rendered-ansi",
+      "--crate-type",
+      "lib",
+      "--emit=dep-info,metadata,link",
+      "-C",
+      "embed-bitcode=no",
+      "-C",
+      "debuginfo=2",
+      "--cfg",
+      "feature=\"backtrace\"",
+      "--cfg",
+      "feature=\"default\"",
+      "-C",
+      "metadata=eead539c5197114c",
+      "-C",
+      "extra-filename=-eead539c5197114c",
+      "--out-dir",
+      "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "-L",
+      "dependency=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "--extern",
+      "derive_error_chain=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libderive_error_chain-a71dedf002c538fb.dylib",
+      "--extern",
+      "error_chain=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/liberror_chain-e8d31903445585a4.rmeta",
+      "--extern",
+      "regex=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libregex-e707aca8a4b19adb.rmeta",
+      "--cap-lints",
+      "allow",
+      "--error-format=json",
+      "--sysroot",
+      "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin"
+    ],
+    "output": "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libdotenv-eead539c5197114c.rmeta"
+  },
+  "prelude": {
+    "crate_id": { "name": "dotenv", "disambiguator": [11146087394912602390, 12203843231817915628] },
+    "crate_root": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src",
+    "external_crates": [
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 1,
+        "id": { "name": "std", "disambiguator": [3710194649008989715, 14559669089861450418] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 2,
+        "id": { "name": "core", "disambiguator": [9392975149979234998, 17049149762166397483] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 3,
+        "id": {
+          "name": "compiler_builtins",
+          "disambiguator": [16512841426258775062, 11665789721448774207]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 4,
+        "id": {
+          "name": "rustc_std_workspace_core",
+          "disambiguator": [10630307797325716480, 16523273723520132349]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 5,
+        "id": { "name": "alloc", "disambiguator": [3264716338318844693, 12681592148182797578] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 6,
+        "id": { "name": "libc", "disambiguator": [140397795414171834, 1910274434865169512] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 7,
+        "id": { "name": "unwind", "disambiguator": [5557669672741662647, 10322216614238315513] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 8,
+        "id": { "name": "cfg_if", "disambiguator": [14339503364484872598, 13531520383629478599] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 9,
+        "id": { "name": "hashbrown", "disambiguator": [14161909693946419124, 17554770295131960960] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 10,
+        "id": {
+          "name": "rustc_std_workspace_alloc",
+          "disambiguator": [9716880057120631437, 4575334529379688610]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 11,
+        "id": {
+          "name": "rustc_demangle",
+          "disambiguator": [17190292700912465587, 13293574150729131089]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 12,
+        "id": { "name": "addr2line", "disambiguator": [16973425767318922457, 5762286362994384933] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 13,
+        "id": { "name": "gimli", "disambiguator": [3049460603833016674, 5895625007283919048] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 14,
+        "id": { "name": "object", "disambiguator": [8971705811930800565, 4802059752817986136] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 15,
+        "id": {
+          "name": "panic_unwind",
+          "disambiguator": [7414259369911982492, 16117941559470048194]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 16,
+        "id": { "name": "error_chain", "disambiguator": [7191580578376296656, 676736337859061684] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 17,
+        "id": { "name": "backtrace", "disambiguator": [13603846891422271461, 8051981298821448506] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 18,
+        "id": {
+          "name": "rustc_demangle",
+          "disambiguator": [15720175298693548240, 16212866585316235357]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 19,
+        "id": { "name": "cfg_if", "disambiguator": [2885544452413168774, 13104928887329991986] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 20,
+        "id": { "name": "addr2line", "disambiguator": [15661640623342977629, 6355197394295318158] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 21,
+        "id": { "name": "gimli", "disambiguator": [1370973192507434477, 9750713609948141426] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 22,
+        "id": { "name": "libc", "disambiguator": [11276923787543947966, 551854132495217576] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 23,
+        "id": { "name": "object", "disambiguator": [15445040234077076603, 5608934108531026961] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 24,
+        "id": {
+          "name": "derive_error_chain",
+          "disambiguator": [2643975194597534552, 1492011603283216143]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 25,
+        "id": { "name": "regex", "disambiguator": [12248592868920551212, 6529690635481265308] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 26,
+        "id": { "name": "aho_corasick", "disambiguator": [3274432620439624277, 548468261436042864] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 27,
+        "id": { "name": "memchr", "disambiguator": [15006338784478437675, 2638256494210454021] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 28,
+        "id": {
+          "name": "thread_local",
+          "disambiguator": [10335933423723452586, 9909980584688640419]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 29,
+        "id": { "name": "lazy_static", "disambiguator": [8143301251019952037, 2132129556103729127] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 30,
+        "id": {
+          "name": "regex_syntax",
+          "disambiguator": [6907378769481704921, 6186637334746643327]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 31,
+        "id": { "name": "ucd_util", "disambiguator": [904701001751283953, 18288357401745992174] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "num": 32,
+        "id": { "name": "utf8_ranges", "disambiguator": [4575435769994033697, 3058922544141863417] }
+      }
+    ],
+    "span": {
+      "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+      "byte_start": 0,
+      "byte_end": 13002,
+      "line_start": 1,
+      "line_end": 377,
+      "column_start": 1,
+      "column_end": 2
+    }
+  },
+  "imports": [],
+  "defs": [
+    {
+      "kind": "Mod",
+      "id": { "krate": 0, "index": 0 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 0,
+        "byte_end": 13002,
+        "line_start": 1,
+        "line_end": 377,
+        "column_start": 1,
+        "column_end": 2
+      },
+      "name": "",
+      "qualname": "::",
+      "value": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 1 },
+        { "krate": 0, "index": 2 },
+        { "krate": 0, "index": 3 },
+        { "krate": 0, "index": 4 },
+        { "krate": 0, "index": 5 },
+        { "krate": 0, "index": 6 },
+        { "krate": 0, "index": 7 },
+        { "krate": 0, "index": 8 },
+        { "krate": 0, "index": 9 },
+        { "krate": 0, "index": 10 },
+        { "krate": 0, "index": 11 },
+        { "krate": 0, "index": 12 },
+        { "krate": 0, "index": 13 },
+        { "krate": 0, "index": 14 },
+        { "krate": 0, "index": 15 },
+        { "krate": 0, "index": 16 },
+        { "krate": 0, "index": 17 },
+        { "krate": 0, "index": 18 },
+        { "krate": 0, "index": 19 },
+        { "krate": 0, "index": 20 },
+        { "krate": 0, "index": 21 },
+        { "krate": 0, "index": 22 },
+        { "krate": 0, "index": 40 },
+        { "krate": 0, "index": 131 },
+        { "krate": 0, "index": 56 },
+        { "krate": 0, "index": 57 },
+        { "krate": 0, "index": 60 },
+        { "krate": 0, "index": 63 },
+        { "krate": 0, "index": 66 },
+        { "krate": 0, "index": 68 },
+        { "krate": 0, "index": 125 },
+        { "krate": 0, "index": 129 },
+        { "krate": 0, "index": 70 },
+        { "krate": 0, "index": 78 },
+        { "krate": 0, "index": 81 },
+        { "krate": 0, "index": 83 },
+        { "krate": 0, "index": 85 },
+        { "krate": 0, "index": 87 },
+        { "krate": 0, "index": 89 },
+        { "krate": 0, "index": 91 },
+        { "krate": 0, "index": 94 },
+        { "krate": 0, "index": 96 },
+        { "krate": 0, "index": 99 },
+        { "krate": 0, "index": 110 },
+        { "krate": 0, "index": 116 },
+        { "krate": 0, "index": 123 },
+        { "krate": 0, "index": 23 },
+        { "krate": 0, "index": 24 },
+        { "krate": 0, "index": 27 },
+        { "krate": 0, "index": 29 },
+        { "krate": 0, "index": 30 },
+        { "krate": 0, "index": 32 },
+        { "krate": 0, "index": 33 },
+        { "krate": 0, "index": 35 },
+        { "krate": 0, "index": 36 },
+        { "krate": 0, "index": 37 },
+        { "krate": 0, "index": 38 },
+        { "krate": 0, "index": 39 }
+      ],
+      "decl_id": null,
+      "docs": " This crate provides a configuration loader in the style of the [ruby dotenv\n gem](https://github.com/bkeepers/dotenv). This library is meant to be used\n on development or testing environments in which setting environment\n variables is not practical. It loads environment variables from a .env\n file, if available, and mashes those with the actual environment variables\n provided by the operating system.\n",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ This crate provides a configuration loader in the style of the [ruby dotenv",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 0,
+            "byte_end": 79,
+            "line_start": 1,
+            "line_end": 1,
+            "column_start": 1,
+            "column_end": 80
+          }
+        },
+        {
+          "value": "/ gem](https://github.com/bkeepers/dotenv). This library is meant to be used",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 80,
+            "byte_end": 158,
+            "line_start": 2,
+            "line_end": 2,
+            "column_start": 1,
+            "column_end": 79
+          }
+        },
+        {
+          "value": "/ on development or testing environments in which setting environment",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 159,
+            "byte_end": 230,
+            "line_start": 3,
+            "line_end": 3,
+            "column_start": 1,
+            "column_end": 72
+          }
+        },
+        {
+          "value": "/ variables is not practical. It loads environment variables from a .env",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 231,
+            "byte_end": 305,
+            "line_start": 4,
+            "line_end": 4,
+            "column_start": 1,
+            "column_end": 75
+          }
+        },
+        {
+          "value": "/ file, if available, and mashes those with the actual environment variables",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 306,
+            "byte_end": 384,
+            "line_start": 5,
+            "line_end": 5,
+            "column_start": 1,
+            "column_end": 79
+          }
+        },
+        {
+          "value": "/ provided by the operating system.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 385,
+            "byte_end": 422,
+            "line_start": 6,
+            "line_end": 6,
+            "column_start": 1,
+            "column_end": 38
+          }
+        }
+      ]
+    },
+    {
+      "kind": "TupleVariant",
+      "id": { "krate": 0, "index": 41 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 919,
+        "byte_end": 922,
+        "line_start": 26,
+        "line_end": 26,
+        "column_start": 5,
+        "column_end": 8
+      },
+      "name": "Msg",
+      "qualname": "::ErrorKind::Msg",
+      "value": "ErrorKind::Msg(String)",
+      "parent": { "krate": 0, "index": 40 },
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "kind": "TupleVariant",
+      "id": { "krate": 0, "index": 44 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 1102,
+        "byte_end": 1111,
+        "line_start": 30,
+        "line_end": 30,
+        "column_start": 5,
+        "column_end": 14
+      },
+      "name": "LineParse",
+      "qualname": "::ErrorKind::LineParse",
+      "value": "ErrorKind::LineParse(String)",
+      "parent": { "krate": 0, "index": 40 },
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "error_chain(custom)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 936,
+            "byte_end": 958,
+            "line_start": 27,
+            "line_end": 27,
+            "column_start": 5,
+            "column_end": 27
+          }
+        },
+        {
+          "value": "error_chain(description = r#\"|_| \"Parsing Error\"\"#)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 963,
+            "byte_end": 1017,
+            "line_start": 28,
+            "line_end": 28,
+            "column_start": 5,
+            "column_end": 59
+          }
+        },
+        {
+          "value": "error_chain(display = r#\"|l| write!(f, \"Error parsing line: '{}'\", l)\"#)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1022,
+            "byte_end": 1097,
+            "line_start": 29,
+            "line_end": 29,
+            "column_start": 5,
+            "column_end": 80
+          }
+        }
+      ]
+    },
+    {
+      "kind": "TupleVariant",
+      "id": { "krate": 0, "index": 47 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 1153,
+        "byte_end": 1167,
+        "line_start": 32,
+        "line_end": 32,
+        "column_start": 5,
+        "column_end": 19
+      },
+      "name": "ParseFormatter",
+      "qualname": "::ErrorKind::ParseFormatter",
+      "value": "ErrorKind::ParseFormatter(::regex::Error)",
+      "parent": { "krate": 0, "index": 40 },
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "error_chain(foreign)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1125,
+            "byte_end": 1148,
+            "line_start": 31,
+            "line_end": 31,
+            "column_start": 5,
+            "column_end": 28
+          }
+        }
+      ]
+    },
+    {
+      "kind": "TupleVariant",
+      "id": { "krate": 0, "index": 50 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 1217,
+        "byte_end": 1219,
+        "line_start": 34,
+        "line_end": 34,
+        "column_start": 5,
+        "column_end": 7
+      },
+      "name": "Io",
+      "qualname": "::ErrorKind::Io",
+      "value": "ErrorKind::Io(::std::io::Error)",
+      "parent": { "krate": 0, "index": 40 },
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "error_chain(foreign)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1189,
+            "byte_end": 1212,
+            "line_start": 33,
+            "line_end": 33,
+            "column_start": 5,
+            "column_end": 28
+          }
+        }
+      ]
+    },
+    {
+      "kind": "TupleVariant",
+      "id": { "krate": 0, "index": 53 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 1271,
+        "byte_end": 1277,
+        "line_start": 36,
+        "line_end": 36,
+        "column_start": 5,
+        "column_end": 11
+      },
+      "name": "EnvVar",
+      "qualname": "::ErrorKind::EnvVar",
+      "value": "ErrorKind::EnvVar(::std::env::VarError)",
+      "parent": { "krate": 0, "index": 40 },
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "error_chain(foreign)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1243,
+            "byte_end": 1266,
+            "line_start": 35,
+            "line_end": 35,
+            "column_start": 5,
+            "column_end": 28
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Enum",
+      "id": { "krate": 0, "index": 40 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 843,
+        "byte_end": 852,
+        "line_start": 24,
+        "line_end": 24,
+        "column_start": 10,
+        "column_end": 19
+      },
+      "name": "ErrorKind",
+      "qualname": "::ErrorKind",
+      "value": "pub enum ErrorKind {\n    Msg(String),\n\n    #[error_chain(custom)]\n    #[error_chain(description = r#\"|_| \"Parsing Error\"\"#)]\n    #[error_chain(display =\n                  r#\"|l| write!(f, \"Error parsing line: '{}'\", l)\"#)]\n    LineParse(String),\n\n    #[error_chain(foreign)]\n    ParseFormatter(::regex::Error),\n\n    #[error_chain(foreign)]\n    Io(::std::io::Error),\n\n    #[error_chain(foreign)]\n    EnvVar(::std::env::VarError),\n}",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 41 },
+        { "krate": 0, "index": 44 },
+        { "krate": 0, "index": 47 },
+        { "krate": 0, "index": 50 },
+        { "krate": 0, "index": 53 }
+      ],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 24 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 1643,
+        "byte_end": 1646,
+        "line_start": 45,
+        "line_end": 45,
+        "column_start": 8,
+        "column_end": 11
+      },
+      "name": "var",
+      "qualname": "::var",
+      "value": "pub fn var<K: AsRef<OsStr>>(K) -> Result<String>",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": " After loading the dotenv file, fetches the environment variable key from the current process.",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ After loading the dotenv file, fetches the environment variable key from the current process.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1337,
+            "byte_end": 1434,
+            "line_start": 41,
+            "line_end": 41,
+            "column_start": 1,
+            "column_end": 98
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1435,
+            "byte_end": 1438,
+            "line_start": 42,
+            "line_end": 42,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ The returned result is Ok(s) if the environment variable is present and is valid unicode. If the",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1439,
+            "byte_end": 1539,
+            "line_start": 43,
+            "line_end": 43,
+            "column_start": 1,
+            "column_end": 101
+          }
+        },
+        {
+          "value": "/ environment variable is not present, or it is not valid unicode, then Err will be returned.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1540,
+            "byte_end": 1635,
+            "line_start": 44,
+            "line_end": 44,
+            "column_start": 1,
+            "column_end": 96
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 27 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 2168,
+        "byte_end": 2172,
+        "line_start": 56,
+        "line_end": 56,
+        "column_start": 8,
+        "column_end": 12
+      },
+      "name": "vars",
+      "qualname": "::vars",
+      "value": "pub fn vars() -> Vars",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": " After loading the dotenv file, returns an iterator of (variable, value) pairs of strings,\n for all the environment variables of the current process.",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ After loading the dotenv file, returns an iterator of (variable, value) pairs of strings,",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1778,
+            "byte_end": 1871,
+            "line_start": 50,
+            "line_end": 50,
+            "column_start": 1,
+            "column_end": 94
+          }
+        },
+        {
+          "value": "/ for all the environment variables of the current process.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1872,
+            "byte_end": 1933,
+            "line_start": 51,
+            "line_end": 51,
+            "column_start": 1,
+            "column_end": 62
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1934,
+            "byte_end": 1937,
+            "line_start": 52,
+            "line_end": 52,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ The returned iterator contains a snapshot of the process's environment variables at the",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 1938,
+            "byte_end": 2029,
+            "line_start": 53,
+            "line_end": 53,
+            "column_start": 1,
+            "column_end": 92
+          }
+        },
+        {
+          "value": "/ time of this invocation, modifications to environment variables afterwards will not be",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 2030,
+            "byte_end": 2120,
+            "line_start": 54,
+            "line_end": 54,
+            "column_start": 1,
+            "column_end": 91
+          }
+        },
+        {
+          "value": "/ reflected in the returned iterator.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 2121,
+            "byte_end": 2160,
+            "line_start": 55,
+            "line_end": 55,
+            "column_start": 1,
+            "column_end": 40
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 37 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 8422,
+        "byte_end": 8431,
+        "line_start": 236,
+        "line_end": 236,
+        "column_start": 8,
+        "column_end": 17
+      },
+      "name": "from_path",
+      "qualname": "::from_path",
+      "value": "pub fn from_path(&Path) -> Result<()>",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": " Loads the file at the specified absolute path.",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ Loads the file at the specified absolute path.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8140,
+            "byte_end": 8190,
+            "line_start": 224,
+            "line_end": 224,
+            "column_start": 1,
+            "column_end": 51
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8191,
+            "byte_end": 8194,
+            "line_start": 225,
+            "line_end": 225,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ Examples",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8195,
+            "byte_end": 8207,
+            "line_start": 226,
+            "line_end": 226,
+            "column_start": 1,
+            "column_end": 13
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8208,
+            "byte_end": 8211,
+            "line_start": 227,
+            "line_end": 227,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8212,
+            "byte_end": 8219,
+            "line_start": 228,
+            "line_end": 228,
+            "column_start": 1,
+            "column_end": 8
+          }
+        },
+        {
+          "value": "/ use dotenv;",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8220,
+            "byte_end": 8235,
+            "line_start": 229,
+            "line_end": 229,
+            "column_start": 1,
+            "column_end": 16
+          }
+        },
+        {
+          "value": "/ use std::env;",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8236,
+            "byte_end": 8253,
+            "line_start": 230,
+            "line_end": 230,
+            "column_start": 1,
+            "column_end": 18
+          }
+        },
+        {
+          "value": "/ use std::path::{Path};",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8254,
+            "byte_end": 8280,
+            "line_start": 231,
+            "line_end": 231,
+            "column_start": 1,
+            "column_end": 27
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8281,
+            "byte_end": 8284,
+            "line_start": 232,
+            "line_end": 232,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ let my_path = env::home_dir().and_then(|a| Some(a.join(\"/.env\"))).unwrap();",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8285,
+            "byte_end": 8364,
+            "line_start": 233,
+            "line_end": 233,
+            "column_start": 1,
+            "column_end": 80
+          }
+        },
+        {
+          "value": "/ dotenv::from_path(my_path.as_path());",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8365,
+            "byte_end": 8406,
+            "line_start": 234,
+            "line_end": 234,
+            "column_start": 1,
+            "column_end": 42
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8407,
+            "byte_end": 8414,
+            "line_start": 235,
+            "line_end": 235,
+            "column_start": 1,
+            "column_end": 8
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 38 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 8900,
+        "byte_end": 8913,
+        "line_start": 255,
+        "line_end": 255,
+        "column_start": 8,
+        "column_end": 21
+      },
+      "name": "from_filename",
+      "qualname": "::from_filename",
+      "value": "pub fn from_filename(&str) -> Result<PathBuf>",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": " Loads the specified file from the environment's current directory or its parents in sequence.",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ Loads the specified file from the environment's current directory or its parents in sequence.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8501,
+            "byte_end": 8598,
+            "line_start": 240,
+            "line_end": 240,
+            "column_start": 1,
+            "column_end": 98
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8599,
+            "byte_end": 8602,
+            "line_start": 241,
+            "line_end": 241,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ # Examples",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8603,
+            "byte_end": 8617,
+            "line_start": 242,
+            "line_end": 242,
+            "column_start": 1,
+            "column_end": 15
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8618,
+            "byte_end": 8625,
+            "line_start": 243,
+            "line_end": 243,
+            "column_start": 1,
+            "column_end": 8
+          }
+        },
+        {
+          "value": "/ use dotenv;",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8626,
+            "byte_end": 8641,
+            "line_start": 244,
+            "line_end": 244,
+            "column_start": 1,
+            "column_end": 16
+          }
+        },
+        {
+          "value": "/ dotenv::from_filename(\"custom.env\").ok();",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8642,
+            "byte_end": 8687,
+            "line_start": 245,
+            "line_end": 245,
+            "column_start": 1,
+            "column_end": 46
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8688,
+            "byte_end": 8695,
+            "line_start": 246,
+            "line_end": 246,
+            "column_start": 1,
+            "column_end": 8
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8696,
+            "byte_end": 8699,
+            "line_start": 247,
+            "line_end": 247,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ It is also possible to do the following, but it is equivalent to using dotenv::dotenv(), which",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8700,
+            "byte_end": 8798,
+            "line_start": 248,
+            "line_end": 248,
+            "column_start": 1,
+            "column_end": 99
+          }
+        },
+        {
+          "value": "/ is preferred.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8799,
+            "byte_end": 8816,
+            "line_start": 249,
+            "line_end": 249,
+            "column_start": 1,
+            "column_end": 18
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8817,
+            "byte_end": 8820,
+            "line_start": 250,
+            "line_end": 250,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8821,
+            "byte_end": 8828,
+            "line_start": 251,
+            "line_end": 251,
+            "column_start": 1,
+            "column_end": 8
+          }
+        },
+        {
+          "value": "/ use dotenv;",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8829,
+            "byte_end": 8844,
+            "line_start": 252,
+            "line_end": 252,
+            "column_start": 1,
+            "column_end": 16
+          }
+        },
+        {
+          "value": "/ dotenv::from_filename(\".env\").ok();",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8845,
+            "byte_end": 8884,
+            "line_start": 253,
+            "line_end": 253,
+            "column_start": 1,
+            "column_end": 40
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 8885,
+            "byte_end": 8892,
+            "line_start": 254,
+            "line_end": 254,
+            "column_start": 1,
+            "column_end": 8
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 39 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+        "byte_start": 9254,
+        "byte_end": 9260,
+        "line_start": 269,
+        "line_end": 269,
+        "column_start": 8,
+        "column_end": 14
+      },
+      "name": "dotenv",
+      "qualname": "::dotenv",
+      "value": "pub fn dotenv() -> Result<PathBuf>",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": " This is usually what you want.\n It loads the .env file located in the environment's current directory or its parents in sequence.",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ This is usually what you want.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9032,
+            "byte_end": 9066,
+            "line_start": 261,
+            "line_end": 261,
+            "column_start": 1,
+            "column_end": 35
+          }
+        },
+        {
+          "value": "/ It loads the .env file located in the environment's current directory or its parents in sequence.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9067,
+            "byte_end": 9168,
+            "line_start": 262,
+            "line_end": 262,
+            "column_start": 1,
+            "column_end": 102
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9169,
+            "byte_end": 9172,
+            "line_start": 263,
+            "line_end": 263,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ # Examples",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9173,
+            "byte_end": 9187,
+            "line_start": 264,
+            "line_end": 264,
+            "column_start": 1,
+            "column_end": 15
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9188,
+            "byte_end": 9195,
+            "line_start": 265,
+            "line_end": 265,
+            "column_start": 1,
+            "column_end": 8
+          }
+        },
+        {
+          "value": "/ use dotenv;",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9196,
+            "byte_end": 9211,
+            "line_start": 266,
+            "line_end": 266,
+            "column_start": 1,
+            "column_end": 16
+          }
+        },
+        {
+          "value": "/ dotenv::dotenv().ok();",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9212,
+            "byte_end": 9238,
+            "line_start": 267,
+            "line_end": 267,
+            "column_start": 1,
+            "column_end": 27
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/dotenv-0.10.1/src/lib.rs",
+            "byte_start": 9239,
+            "byte_end": 9246,
+            "line_start": 268,
+            "line_end": 268,
+            "column_start": 1,
+            "column_end": 8
+          }
+        }
+      ]
+    }
+  ],
+  "impls": [],
+  "refs": [],
+  "macro_refs": [],
+  "relations": []
+}

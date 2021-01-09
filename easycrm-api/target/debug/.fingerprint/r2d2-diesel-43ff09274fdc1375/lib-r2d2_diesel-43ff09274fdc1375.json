@@ -1,0 +1,20 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 2174066185103068101,
+  "profile": 9935990280773120926,
+  "path": 17460238032982555270,
+  "deps": [
+    [9132513640202890148, "r2d2", false, 255556720145426559],
+    [11738008164668046990, "diesel", false, 16485186308083120808]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/r2d2-diesel-43ff09274fdc1375/dep-lib-r2d2_diesel-43ff09274fdc1375"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 12247527473408837530
+}

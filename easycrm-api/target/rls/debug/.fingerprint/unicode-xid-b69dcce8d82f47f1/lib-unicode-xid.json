@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"default\"]",
+  "target": 17781475209714866777,
+  "profile": 6299028598154287785,
+  "path": 3427017425161706051,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/unicode-xid-b69dcce8d82f47f1/dep-lib-unicode-xid"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 8984739024795042354,
+  "config": 0
+}

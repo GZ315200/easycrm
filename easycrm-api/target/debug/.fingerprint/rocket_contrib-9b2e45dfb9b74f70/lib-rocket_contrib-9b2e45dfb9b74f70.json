@@ -1,0 +1,23 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"json\", \"serde\", \"serde_json\"]",
+  "target": 12265842083035322625,
+  "profile": 9935990280773120926,
+  "path": 15195611649439670065,
+  "deps": [
+    [2428412896888309155, "notify", false, 463579783361096103],
+    [5027596198908666028, "log", false, 12457485896657229405],
+    [9074916823287167428, "serde", false, 3626562951016003394],
+    [14176180871932240439, "rocket", false, 8952562809432949154],
+    [17010199177273898012, "serde_json", false, 14163167909287795863]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/rocket_contrib-9b2e45dfb9b74f70/dep-lib-rocket_contrib-9b2e45dfb9b74f70"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 10880743381867642965
+}

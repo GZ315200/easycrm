@@ -1,0 +1,377 @@
+{
+  "config": {
+    "output_file": null,
+    "full_docs": false,
+    "pub_only": true,
+    "reachable_only": true,
+    "distro_crate": false,
+    "signatures": false,
+    "borrow_data": false
+  },
+  "version": "0.19.0",
+  "compilation": {
+    "directory": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2",
+    "program": "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rls",
+    "arguments": [
+      "--crate-name",
+      "typeable",
+      "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+      "--json=diagnostic-rendered-ansi",
+      "--crate-type",
+      "lib",
+      "--emit=dep-info,metadata",
+      "-C",
+      "embed-bitcode=no",
+      "-C",
+      "debuginfo=2",
+      "-C",
+      "metadata=577612a6c6aa27f0",
+      "-C",
+      "extra-filename=-577612a6c6aa27f0",
+      "--out-dir",
+      "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "-L",
+      "dependency=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "--cap-lints",
+      "allow",
+      "--error-format=json",
+      "--sysroot",
+      "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin"
+    ],
+    "output": "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libtypeable-577612a6c6aa27f0.rmeta"
+  },
+  "prelude": {
+    "crate_id": { "name": "typeable", "disambiguator": [310394922110523711, 901745190778702074] },
+    "crate_root": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src",
+    "external_crates": [
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 1,
+        "id": { "name": "std", "disambiguator": [3710194649008989715, 14559669089861450418] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 2,
+        "id": { "name": "core", "disambiguator": [9392975149979234998, 17049149762166397483] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 3,
+        "id": {
+          "name": "compiler_builtins",
+          "disambiguator": [16512841426258775062, 11665789721448774207]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 4,
+        "id": {
+          "name": "rustc_std_workspace_core",
+          "disambiguator": [10630307797325716480, 16523273723520132349]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 5,
+        "id": { "name": "alloc", "disambiguator": [3264716338318844693, 12681592148182797578] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 6,
+        "id": { "name": "libc", "disambiguator": [140397795414171834, 1910274434865169512] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 7,
+        "id": { "name": "unwind", "disambiguator": [5557669672741662647, 10322216614238315513] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 8,
+        "id": { "name": "cfg_if", "disambiguator": [14339503364484872598, 13531520383629478599] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 9,
+        "id": { "name": "hashbrown", "disambiguator": [14161909693946419124, 17554770295131960960] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 10,
+        "id": {
+          "name": "rustc_std_workspace_alloc",
+          "disambiguator": [9716880057120631437, 4575334529379688610]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 11,
+        "id": {
+          "name": "rustc_demangle",
+          "disambiguator": [17190292700912465587, 13293574150729131089]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 12,
+        "id": { "name": "addr2line", "disambiguator": [16973425767318922457, 5762286362994384933] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 13,
+        "id": { "name": "gimli", "disambiguator": [3049460603833016674, 5895625007283919048] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 14,
+        "id": { "name": "object", "disambiguator": [8971705811930800565, 4802059752817986136] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "num": 15,
+        "id": {
+          "name": "panic_unwind",
+          "disambiguator": [7414259369911982492, 16117941559470048194]
+        }
+      }
+    ],
+    "span": {
+      "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+      "byte_start": 0,
+      "byte_end": 427,
+      "line_start": 1,
+      "line_end": 17,
+      "column_start": 1,
+      "column_end": 31
+    }
+  },
+  "imports": [],
+  "defs": [
+    {
+      "kind": "Mod",
+      "id": { "krate": 0, "index": 0 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "byte_start": 0,
+        "byte_end": 427,
+        "line_start": 1,
+        "line_end": 17,
+        "column_start": 1,
+        "column_end": 31
+      },
+      "name": "",
+      "qualname": "::",
+      "value": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 1 },
+        { "krate": 0, "index": 2 },
+        { "krate": 0, "index": 3 },
+        { "krate": 0, "index": 4 },
+        { "krate": 0, "index": 5 },
+        { "krate": 0, "index": 6 },
+        { "krate": 0, "index": 8 }
+      ],
+      "decl_id": null,
+      "docs": " Exposes `Typeable`, which exposes the `get_type` method, which gives\n the `TypeId` of any 'static type.\n",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "deny(missing_docs)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 0,
+            "byte_end": 22,
+            "line_start": 1,
+            "line_end": 1,
+            "column_start": 1,
+            "column_end": 23
+          }
+        },
+        {
+          "value": "deny(warnings)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 23,
+            "byte_end": 41,
+            "line_start": 2,
+            "line_end": 2,
+            "column_start": 1,
+            "column_end": 19
+          }
+        },
+        {
+          "value": "/ Exposes `Typeable`, which exposes the `get_type` method, which gives",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 43,
+            "byte_end": 115,
+            "line_start": 4,
+            "line_end": 4,
+            "column_start": 1,
+            "column_end": 73
+          }
+        },
+        {
+          "value": "/ the `TypeId` of any 'static type.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 116,
+            "byte_end": 153,
+            "line_start": 5,
+            "line_end": 5,
+            "column_start": 1,
+            "column_end": 38
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Trait",
+      "id": { "krate": 0, "index": 6 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "byte_start": 257,
+        "byte_end": 265,
+        "line_start": 11,
+        "line_end": 11,
+        "column_start": 11,
+        "column_end": 19
+      },
+      "name": "Typeable",
+      "qualname": "::Typeable",
+      "value": "Typeable: Any",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 7 }],
+      "decl_id": null,
+      "docs": " Universal mixin trait for adding a `get_type` method.",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ Universal mixin trait for adding a `get_type` method.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 185,
+            "byte_end": 242,
+            "line_start": 9,
+            "line_end": 9,
+            "column_start": 1,
+            "column_end": 58
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 243,
+            "byte_end": 246,
+            "line_start": 10,
+            "line_end": 10,
+            "column_start": 1,
+            "column_end": 4
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Method",
+      "id": { "krate": 0, "index": 7 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "byte_start": 343,
+        "byte_end": 351,
+        "line_start": 14,
+        "line_end": 14,
+        "column_start": 8,
+        "column_end": 16
+      },
+      "name": "get_type",
+      "qualname": "::Typeable::get_type",
+      "value": "pub fn get_type(&Self) -> TypeId",
+      "parent": { "krate": 0, "index": 6 },
+      "children": [],
+      "decl_id": null,
+      "docs": " Get the `TypeId` of this object.\n",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ Get the `TypeId` of this object.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 277,
+            "byte_end": 313,
+            "line_start": 12,
+            "line_end": 12,
+            "column_start": 5,
+            "column_end": 41
+          }
+        },
+        {
+          "value": "inline(always)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+            "byte_start": 318,
+            "byte_end": 335,
+            "line_start": 13,
+            "line_end": 13,
+            "column_start": 5,
+            "column_end": 22
+          }
+        }
+      ]
+    }
+  ],
+  "impls": [
+    {
+      "id": 0,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "byte_start": 423,
+        "byte_end": 424,
+        "line_start": 17,
+        "line_end": 17,
+        "column_start": 27,
+        "column_end": 28
+      },
+      "value": "",
+      "parent": null,
+      "children": [],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    }
+  ],
+  "refs": [],
+  "macro_refs": [],
+  "relations": [
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "byte_start": 267,
+        "byte_end": 270,
+        "line_start": 11,
+        "line_end": 11,
+        "column_start": 21,
+        "column_end": 24
+      },
+      "kind": "SuperTrait",
+      "from": { "krate": 2, "index": 2574 },
+      "to": { "krate": 0, "index": 6 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/typeable-0.1.2/src/lib.rs",
+        "byte_start": 423,
+        "byte_end": 424,
+        "line_start": 17,
+        "line_end": 17,
+        "column_start": 27,
+        "column_end": 28
+      },
+      "kind": { "Impl": { "id": 0 } },
+      "from": { "krate": 0, "index": 9 },
+      "to": { "krate": 0, "index": 6 }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 3490929865674521412,
+  "profile": 9935990280773120926,
+  "path": 1813106207118334453,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/rustc-demangle-68c66e2cb55c8f43/dep-lib-rustc_demangle-68c66e2cb55c8f43"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 14996600717891802618
+}

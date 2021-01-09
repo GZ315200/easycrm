@@ -1,0 +1,20 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 8782253450015918789,
+  "profile": 9935990280773120926,
+  "path": 17876568851181908237,
+  "deps": [
+    [4117749705314174326, "bitflags", false, 2459618723873809092],
+    [15606898554439142613, "fsevent_sys", false, 3898912948583290199]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/fsevent-07f59c879eb3fafd/dep-lib-fsevent-07f59c879eb3fafd"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 3759387644215090917
+}

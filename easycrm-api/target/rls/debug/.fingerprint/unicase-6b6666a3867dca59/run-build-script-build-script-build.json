@@ -1,0 +1,12 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "",
+  "target": 0,
+  "profile": 0,
+  "path": 0,
+  "deps": [[5079911357566212962, "build_script_build", false, 12815581606279685104]],
+  "local": [{ "Precalculated": "1.4.2" }],
+  "rustflags": [],
+  "metadata": 0,
+  "config": 0
+}

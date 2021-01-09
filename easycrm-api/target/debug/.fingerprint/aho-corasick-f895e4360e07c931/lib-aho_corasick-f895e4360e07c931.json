@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 9252676846766199821,
+  "profile": 9935990280773120926,
+  "path": 17082652288974878159,
+  "deps": [[18341199337698084194, "memchr", false, 1009961054827762164]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/aho-corasick-f895e4360e07c931/dep-lib-aho_corasick-f895e4360e07c931"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 3766712706468348948
+}

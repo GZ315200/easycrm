@@ -1,0 +1,25 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"addr2line\", \"default\", \"gimli-symbolize\", \"miniz_oxide\", \"object\", \"std\"]",
+  "target": 17526671262565075265,
+  "profile": 16668067249205866872,
+  "path": 16717922269165180744,
+  "deps": [
+    [459707256310480844, "cfg_if", false, 1953849314968625900],
+    [1940737081377767554, "object", false, 7027258695389360438],
+    [4399576548227209033, "libc", false, 16486323017787638177],
+    [5550866712979869396, "miniz_oxide", false, 6190337937921456430],
+    [11112605183159769398, "addr2line", false, 2929153964046175874],
+    [16369287293139174814, "rustc_demangle", false, 8706798128746589923]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/backtrace-a81bf0b52f975a14/dep-lib-backtrace"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 7223263141473362705,
+  "config": 0
+}

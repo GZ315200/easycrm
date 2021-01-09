@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"read\"]",
+  "target": 10505394419469568886,
+  "profile": 9935990280773120926,
+  "path": 346374504940289365,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/gimli-662e20208aa7e3e5/dep-lib-gimli-662e20208aa7e3e5"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 2892955674895201627
+}

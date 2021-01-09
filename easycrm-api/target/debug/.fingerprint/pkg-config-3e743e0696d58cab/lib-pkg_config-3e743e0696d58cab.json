@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 7631446115719786337,
+  "profile": 9935990280773120926,
+  "path": 9921126538484025450,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/pkg-config-3e743e0696d58cab/dep-lib-pkg_config-3e743e0696d58cab"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 6346311810227624339
+}

@@ -1,0 +1,11 @@
+/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/memchr-3210aad0d8dc57fa.rmeta: /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/lib.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/fallback.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/iter.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/naive.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/mod.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/avx.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/sse2.rs
+
+/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/memchr-3210aad0d8dc57fa.d: /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/lib.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/fallback.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/iter.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/naive.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/mod.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/avx.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/sse2.rs
+
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/lib.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/fallback.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/iter.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/naive.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/mod.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/avx.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/memchr-2.3.4/src/x86/sse2.rs:

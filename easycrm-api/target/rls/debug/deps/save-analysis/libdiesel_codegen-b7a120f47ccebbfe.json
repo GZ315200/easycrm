@@ -1,0 +1,945 @@
+{
+  "config": {
+    "output_file": null,
+    "full_docs": false,
+    "pub_only": true,
+    "reachable_only": true,
+    "distro_crate": false,
+    "signatures": false,
+    "borrow_data": false
+  },
+  "version": "0.19.0",
+  "compilation": {
+    "directory": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1",
+    "program": "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rls",
+    "arguments": [
+      "--crate-name",
+      "diesel_codegen",
+      "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+      "--json=diagnostic-rendered-ansi",
+      "--crate-type",
+      "proc-macro",
+      "--emit=dep-info,link",
+      "-C",
+      "prefer-dynamic",
+      "-C",
+      "embed-bitcode=no",
+      "-C",
+      "debuginfo=2",
+      "--cfg",
+      "feature=\"default\"",
+      "--cfg",
+      "feature=\"diesel_infer_schema\"",
+      "--cfg",
+      "feature=\"dotenv\"",
+      "--cfg",
+      "feature=\"mysql\"",
+      "-C",
+      "metadata=b7a120f47ccebbfe",
+      "-C",
+      "extra-filename=-b7a120f47ccebbfe",
+      "--out-dir",
+      "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "-L",
+      "dependency=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "--extern",
+      "diesel=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libdiesel-c3055378bdc6a26f.rlib",
+      "--extern",
+      "diesel_infer_schema=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libdiesel_infer_schema-9e62671fa4a4d196.rlib",
+      "--extern",
+      "dotenv=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libdotenv-eead539c5197114c.rlib",
+      "--extern",
+      "quote=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libquote-c3ae267a9ac66730.rlib",
+      "--extern",
+      "serde=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libserde-3a1c6f1e7d9553b0.rlib",
+      "--extern",
+      "serde_json=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libserde_json-3ffb6f801efea595.rlib",
+      "--extern",
+      "syn=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libsyn-125c82c72e4c0c4f.rlib",
+      "--extern",
+      "proc_macro",
+      "--cap-lints",
+      "allow",
+      "-L",
+      "native=/usr/local/Cellar/mysql/8.0.22_1/lib",
+      "--error-format=json",
+      "--sysroot",
+      "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin"
+    ],
+    "output": "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libdiesel_codegen-b7a120f47ccebbfe.dylib"
+  },
+  "prelude": {
+    "crate_id": {
+      "name": "diesel_codegen",
+      "disambiguator": [11217092640312708011, 12525288898043409498]
+    },
+    "crate_root": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src",
+    "external_crates": [
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 1,
+        "id": { "name": "std", "disambiguator": [3710194649008989715, 14559669089861450418] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 2,
+        "id": { "name": "core", "disambiguator": [9392975149979234998, 17049149762166397483] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 3,
+        "id": {
+          "name": "compiler_builtins",
+          "disambiguator": [16512841426258775062, 11665789721448774207]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 4,
+        "id": {
+          "name": "rustc_std_workspace_core",
+          "disambiguator": [10630307797325716480, 16523273723520132349]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 5,
+        "id": { "name": "alloc", "disambiguator": [3264716338318844693, 12681592148182797578] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 6,
+        "id": { "name": "libc", "disambiguator": [140397795414171834, 1910274434865169512] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 7,
+        "id": { "name": "unwind", "disambiguator": [5557669672741662647, 10322216614238315513] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 8,
+        "id": { "name": "cfg_if", "disambiguator": [14339503364484872598, 13531520383629478599] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 9,
+        "id": { "name": "hashbrown", "disambiguator": [14161909693946419124, 17554770295131960960] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 10,
+        "id": {
+          "name": "rustc_std_workspace_alloc",
+          "disambiguator": [9716880057120631437, 4575334529379688610]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 11,
+        "id": {
+          "name": "rustc_demangle",
+          "disambiguator": [17190292700912465587, 13293574150729131089]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 12,
+        "id": { "name": "addr2line", "disambiguator": [16973425767318922457, 5762286362994384933] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 13,
+        "id": { "name": "gimli", "disambiguator": [3049460603833016674, 5895625007283919048] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 14,
+        "id": { "name": "object", "disambiguator": [8971705811930800565, 4802059752817986136] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 15,
+        "id": {
+          "name": "panic_unwind",
+          "disambiguator": [7414259369911982492, 16117941559470048194]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 16,
+        "id": { "name": "dotenv", "disambiguator": [11146087394912602390, 12203843231817915628] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 17,
+        "id": { "name": "error_chain", "disambiguator": [7191580578376296656, 676736337859061684] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 18,
+        "id": { "name": "backtrace", "disambiguator": [13603846891422271461, 8051981298821448506] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 19,
+        "id": {
+          "name": "rustc_demangle",
+          "disambiguator": [15720175298693548240, 16212866585316235357]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 20,
+        "id": { "name": "cfg_if", "disambiguator": [2885544452413168774, 13104928887329991986] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 21,
+        "id": { "name": "addr2line", "disambiguator": [15661640623342977629, 6355197394295318158] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 22,
+        "id": { "name": "gimli", "disambiguator": [1370973192507434477, 9750713609948141426] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 23,
+        "id": { "name": "libc", "disambiguator": [11276923787543947966, 551854132495217576] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 24,
+        "id": { "name": "object", "disambiguator": [15445040234077076603, 5608934108531026961] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 25,
+        "id": {
+          "name": "derive_error_chain",
+          "disambiguator": [2643975194597534552, 1492011603283216143]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 26,
+        "id": { "name": "regex", "disambiguator": [12248592868920551212, 6529690635481265308] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 27,
+        "id": { "name": "aho_corasick", "disambiguator": [3274432620439624277, 548468261436042864] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 28,
+        "id": { "name": "memchr", "disambiguator": [15006338784478437675, 2638256494210454021] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 29,
+        "id": {
+          "name": "thread_local",
+          "disambiguator": [10335933423723452586, 9909980584688640419]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 30,
+        "id": { "name": "lazy_static", "disambiguator": [8143301251019952037, 2132129556103729127] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 31,
+        "id": {
+          "name": "regex_syntax",
+          "disambiguator": [6907378769481704921, 6186637334746643327]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 32,
+        "id": { "name": "ucd_util", "disambiguator": [904701001751283953, 18288357401745992174] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 33,
+        "id": { "name": "utf8_ranges", "disambiguator": [4575435769994033697, 3058922544141863417] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 34,
+        "id": {
+          "name": "diesel_infer_schema",
+          "disambiguator": [11260309853551141728, 13393317569977930915]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 35,
+        "id": { "name": "diesel", "disambiguator": [6673831287085618098, 13672293507691215298] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 36,
+        "id": { "name": "byteorder", "disambiguator": [13582352189683014517, 16931093192619513942] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 37,
+        "id": {
+          "name": "mysqlclient_sys",
+          "disambiguator": [15623540876497199402, 15416285636677431919]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 38,
+        "id": { "name": "url", "disambiguator": [17813872725930789326, 11424926033960203163] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 39,
+        "id": { "name": "matches", "disambiguator": [7431486299780444964, 6816711820944985831] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 40,
+        "id": { "name": "idna", "disambiguator": [6138094510285267689, 15620818328884309416] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 41,
+        "id": {
+          "name": "unicode_bidi",
+          "disambiguator": [1057278727281237274, 2989550245855378291]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 42,
+        "id": {
+          "name": "unicode_normalization",
+          "disambiguator": [16963308479611759973, 8005497727005691032]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 43,
+        "id": { "name": "tinyvec", "disambiguator": [8751375258306136208, 4987667009924728256] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 44,
+        "id": {
+          "name": "tinyvec_macros",
+          "disambiguator": [9046701825359416245, 11823880250043723872]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 45,
+        "id": {
+          "name": "percent_encoding",
+          "disambiguator": [975200965450614233, 17948855817609648835]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 46,
+        "id": { "name": "quote", "disambiguator": [1625390620849021870, 13826450263788885892] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 47,
+        "id": { "name": "proc_macro", "disambiguator": [3130355442040012681, 15931841446876085506] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 48,
+        "id": { "name": "syn", "disambiguator": [2702937560027622117, 14825048347771282692] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 49,
+        "id": {
+          "name": "unicode_xid",
+          "disambiguator": [1089946576399416089, 18054190435060541906]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 50,
+        "id": { "name": "synom", "disambiguator": [11836789404479569480, 16444201401834255529] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 51,
+        "id": { "name": "serde", "disambiguator": [4580853941475762412, 8884316512199597187] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 52,
+        "id": {
+          "name": "serde_derive",
+          "disambiguator": [2796307504296172104, 12272248611128277176]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 53,
+        "id": { "name": "serde_json", "disambiguator": [6448478641492291761, 1323480305865650781] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 54,
+        "id": { "name": "itoa", "disambiguator": [16608254994264803268, 14417065854401008941] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "num": 55,
+        "id": { "name": "ryu", "disambiguator": [10375615455180899135, 13603272530038701971] }
+      }
+    ],
+    "span": {
+      "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+      "byte_start": 18,
+      "byte_end": 3385,
+      "line_start": 2,
+      "line_end": 104,
+      "column_start": 1,
+      "column_end": 2
+    }
+  },
+  "imports": [],
+  "defs": [
+    {
+      "kind": "Mod",
+      "id": { "krate": 0, "index": 0 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 18,
+        "byte_end": 3385,
+        "line_start": 2,
+        "line_end": 104,
+        "column_start": 1,
+        "column_end": 2
+      },
+      "name": "",
+      "qualname": "::",
+      "value": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 1 },
+        { "krate": 0, "index": 2 },
+        { "krate": 0, "index": 4 },
+        { "krate": 0, "index": 5 },
+        { "krate": 0, "index": 6 },
+        { "krate": 0, "index": 7 },
+        { "krate": 0, "index": 8 },
+        { "krate": 0, "index": 9 },
+        { "krate": 0, "index": 10 },
+        { "krate": 0, "index": 11 },
+        { "krate": 0, "index": 12 },
+        { "krate": 0, "index": 21 },
+        { "krate": 0, "index": 39 },
+        { "krate": 0, "index": 46 },
+        { "krate": 0, "index": 58 },
+        { "krate": 0, "index": 77 },
+        { "krate": 0, "index": 83 },
+        { "krate": 0, "index": 88 },
+        { "krate": 0, "index": 120 },
+        { "krate": 0, "index": 130 },
+        { "krate": 0, "index": 156 },
+        { "krate": 0, "index": 164 },
+        { "krate": 0, "index": 206 },
+        { "krate": 0, "index": 215 },
+        { "krate": 0, "index": 222 },
+        { "krate": 0, "index": 223 },
+        { "krate": 0, "index": 224 },
+        { "krate": 0, "index": 225 },
+        { "krate": 0, "index": 226 },
+        { "krate": 0, "index": 227 },
+        { "krate": 0, "index": 228 },
+        { "krate": 0, "index": 229 },
+        { "krate": 0, "index": 230 },
+        { "krate": 0, "index": 231 },
+        { "krate": 0, "index": 232 },
+        { "krate": 0, "index": 331 }
+      ],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "deny(warnings, missing_copy_implementations)",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 18,
+            "byte_end": 66,
+            "line_start": 2,
+            "line_end": 2,
+            "column_start": 1,
+            "column_end": 49
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 224 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 1469,
+        "byte_end": 1485,
+        "line_start": 59,
+        "line_end": 59,
+        "column_start": 8,
+        "column_end": 24
+      },
+      "name": "derive_queryable",
+      "qualname": "::derive_queryable",
+      "value": "pub fn derive_queryable(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(Queryable, attributes(column_name))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 1405,
+            "byte_end": 1461,
+            "line_start": 58,
+            "line_end": 58,
+            "column_start": 1,
+            "column_end": 57
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 225 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 1659,
+        "byte_end": 1678,
+        "line_start": 64,
+        "line_end": 64,
+        "column_start": 8,
+        "column_end": 27
+      },
+      "name": "derive_identifiable",
+      "qualname": "::derive_identifiable",
+      "value": "pub fn derive_identifiable(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(Identifiable, attributes(table_name, primary_key))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 1580,
+            "byte_end": 1651,
+            "line_start": 63,
+            "line_end": 63,
+            "column_start": 1,
+            "column_end": 72
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 226 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 1856,
+        "byte_end": 1873,
+        "line_start": 69,
+        "line_end": 69,
+        "column_start": 8,
+        "column_end": 25
+      },
+      "name": "derive_insertable",
+      "qualname": "::derive_insertable",
+      "value": "pub fn derive_insertable(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(Insertable, attributes(table_name, column_name))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 1779,
+            "byte_end": 1848,
+            "line_start": 68,
+            "line_end": 68,
+            "column_start": 1,
+            "column_end": 70
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 227 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 2080,
+        "byte_end": 2099,
+        "line_start": 74,
+        "line_end": 74,
+        "column_start": 8,
+        "column_end": 27
+      },
+      "name": "derive_as_changeset",
+      "qualname": "::derive_as_changeset",
+      "value": "pub fn derive_as_changeset(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(AsChangeset,\n                    attributes(table_name, primary_key, column_name,\n                               changeset_options))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 1970,
+            "byte_end": 2072,
+            "line_start": 73,
+            "line_end": 73,
+            "column_start": 1,
+            "column_end": 103
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 228 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 2278,
+        "byte_end": 2297,
+        "line_start": 79,
+        "line_end": 79,
+        "column_start": 8,
+        "column_end": 27
+      },
+      "name": "derive_associations",
+      "qualname": "::derive_associations",
+      "value": "pub fn derive_associations(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(Associations, attributes(table_name, belongs_to))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 2200,
+            "byte_end": 2270,
+            "line_start": 78,
+            "line_end": 78,
+            "column_start": 1,
+            "column_end": 71
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 229 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 2513,
+        "byte_end": 2532,
+        "line_start": 85,
+        "line_end": 85,
+        "column_start": 8,
+        "column_end": 27
+      },
+      "name": "derive_infer_schema",
+      "qualname": "::derive_infer_schema",
+      "value": "pub fn derive_infer_schema(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(InferSchema, attributes(infer_schema_options))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 2398,
+            "byte_end": 2465,
+            "line_start": 83,
+            "line_end": 83,
+            "column_start": 1,
+            "column_end": 68
+          }
+        },
+        {
+          "value": "cfg(feature = \"diesel_infer_schema\")",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 2466,
+            "byte_end": 2505,
+            "line_start": 84,
+            "line_end": 84,
+            "column_start": 1,
+            "column_end": 40
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 230 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 2772,
+        "byte_end": 2802,
+        "line_start": 91,
+        "line_end": 91,
+        "column_start": 8,
+        "column_end": 38
+      },
+      "name": "derive_infer_table_from_schema",
+      "qualname": "::derive_infer_table_from_schema",
+      "value": "pub fn derive_infer_table_from_schema(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(InferTableFromSchema,\n                    attributes(infer_table_from_schema_options))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 2637,
+            "byte_end": 2724,
+            "line_start": 89,
+            "line_end": 89,
+            "column_start": 1,
+            "column_end": 88
+          }
+        },
+        {
+          "value": "cfg(feature = \"diesel_infer_schema\")",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 2725,
+            "byte_end": 2764,
+            "line_start": 90,
+            "line_end": 90,
+            "column_start": 1,
+            "column_end": 40
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Function",
+      "id": { "krate": 0, "index": 231 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+        "byte_start": 3001,
+        "byte_end": 3024,
+        "line_start": 96,
+        "line_end": 96,
+        "column_start": 8,
+        "column_end": 31
+      },
+      "name": "derive_embed_migrations",
+      "qualname": "::derive_embed_migrations",
+      "value": "pub fn derive_embed_migrations(TokenStream) -> TokenStream",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "proc_macro_derive(EmbedMigrations, attributes(embed_migrations_options))",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/lib.rs",
+            "byte_start": 2918,
+            "byte_end": 2993,
+            "line_start": 95,
+            "line_end": 95,
+            "column_start": 1,
+            "column_end": 76
+          }
+        }
+      ]
+    }
+  ],
+  "impls": [
+    {
+      "id": 0,
+      "kind": "Inherent",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/attr.rs",
+        "byte_start": 8572,
+        "byte_end": 8576,
+        "line_start": 16,
+        "line_end": 16,
+        "column_start": 6,
+        "column_end": 10
+      },
+      "value": "",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 52 },
+        { "krate": 0, "index": 54 },
+        { "krate": 0, "index": 55 }
+      ],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 1,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/attr.rs",
+        "byte_start": 9558,
+        "byte_end": 9562,
+        "line_start": 50,
+        "line_end": 50,
+        "column_start": 26,
+        "column_end": 30
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 57 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 2,
+      "kind": "Inherent",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/model.rs",
+        "byte_start": 15554,
+        "byte_end": 15559,
+        "line_start": 15,
+        "line_end": 15,
+        "column_start": 6,
+        "column_end": 11
+      },
+      "value": "",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 100 },
+        { "krate": 0, "index": 103 },
+        { "krate": 0, "index": 105 },
+        { "krate": 0, "index": 106 }
+      ],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 3,
+      "kind": "Inherent",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/model.rs",
+        "byte_start": 17716,
+        "byte_end": 17726,
+        "line_start": 83,
+        "line_end": 83,
+        "column_start": 6,
+        "column_end": 16
+      },
+      "value": "",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 117 },
+        { "krate": 0, "index": 118 },
+        { "krate": 0, "index": 119 }
+      ],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    }
+  ],
+  "refs": [],
+  "macro_refs": [],
+  "relations": [
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/attr.rs",
+        "byte_start": 8572,
+        "byte_end": 8576,
+        "line_start": 16,
+        "line_end": 16,
+        "column_start": 6,
+        "column_end": 10
+      },
+      "kind": { "Impl": { "id": 0 } },
+      "from": { "krate": 0, "index": 233 },
+      "to": { "krate": 4294967295, "index": 4294967295 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/attr.rs",
+        "byte_start": 9558,
+        "byte_end": 9562,
+        "line_start": 50,
+        "line_end": 50,
+        "column_start": 26,
+        "column_end": 30
+      },
+      "kind": { "Impl": { "id": 1 } },
+      "from": { "krate": 0, "index": 233 },
+      "to": { "krate": 46, "index": 38 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/model.rs",
+        "byte_start": 15554,
+        "byte_end": 15559,
+        "line_start": 15,
+        "line_end": 15,
+        "column_start": 6,
+        "column_end": 11
+      },
+      "kind": { "Impl": { "id": 2 } },
+      "from": { "krate": 0, "index": 92 },
+      "to": { "krate": 4294967295, "index": 4294967295 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/diesel_codegen-0.16.1/src/model.rs",
+        "byte_start": 17716,
+        "byte_end": 17726,
+        "line_start": 83,
+        "line_end": 83,
+        "column_start": 6,
+        "column_end": 16
+      },
+      "kind": { "Impl": { "id": 3 } },
+      "from": { "krate": 0, "index": 109 },
+      "to": { "krate": 4294967295, "index": 4294967295 }
+    }
+  ]
+}

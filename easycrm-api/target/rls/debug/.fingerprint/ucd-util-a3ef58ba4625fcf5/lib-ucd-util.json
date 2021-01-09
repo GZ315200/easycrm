@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 6627134435859453092,
+  "profile": 16668067249205866872,
+  "path": 17410166112060534279,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/ucd-util-a3ef58ba4625fcf5/dep-lib-ucd-util"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 10913448515271680259,
+  "config": 0
+}

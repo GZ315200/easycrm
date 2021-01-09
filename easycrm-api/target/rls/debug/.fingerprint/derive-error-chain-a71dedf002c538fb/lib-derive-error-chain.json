@@ -1,0 +1,21 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 660583689939426099,
+  "profile": 6299028598154287785,
+  "path": 11019158770851045923,
+  "deps": [
+    [8181095935280535816, "quote", false, 6964978923900192107],
+    [14510244166005358681, "syn", false, 12129471609373750849]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/derive-error-chain-a71dedf002c538fb/dep-lib-derive-error-chain"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 14390914533605546417,
+  "config": 0
+}

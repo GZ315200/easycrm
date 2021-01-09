@@ -1,0 +1,20 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 10088282520713642473,
+  "profile": 9935990280773120926,
+  "path": 16174206582053578077,
+  "deps": [
+    [524727787372165186, "yansi", false, 1877951182017675315],
+    [13855371118854453264, "version_check", false, 3526727937105161975]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/rocket-f5771c4c70f4894b/dep-build-script-build_script_build-f5771c4c70f4894b"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 4802696533096075105
+}

@@ -1,0 +1,23 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"clock\", \"default\", \"libc\", \"oldtime\", \"serde\", \"std\", \"time\", \"winapi\"]",
+  "target": 9549722640174953992,
+  "profile": 9935990280773120926,
+  "path": 18000097885886600538,
+  "deps": [
+    [3518880246508676464, "time", false, 16016036974896141089],
+    [4399576548227209033, "libc", false, 9381783726207496793],
+    [9074916823287167428, "serde", false, 3626562951016003394],
+    [9709864083255311115, "num_integer", false, 786324866623671312],
+    [11428644826077603515, "num_traits", false, 1792221773695739870]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/chrono-1b5d108a59d8f19c/dep-lib-chrono-1b5d108a59d8f19c"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 4048741386119395303
+}

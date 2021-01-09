@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 1711751979627915205,
+  "profile": 9935990280773120926,
+  "path": 5042139771225720052,
+  "deps": [[17499414838819180525, "build_script_build", false, 18310333705986864532]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/mysqlclient-sys-3adc1f36ed82d37a/dep-lib-mysqlclient_sys-3adc1f36ed82d37a"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 11010181742685991214
+}

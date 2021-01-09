@@ -13,7 +13,7 @@ use rocket_contrib::json::{Json, JsonValue};
 mod customers;
 mod progress;
 mod users;
-use customers::Customer;
+use customers::{Customer, CustomerDto};
 use progress::Progress;
 use users::{User, UserLogin, UserVo};
 
@@ -30,10 +30,10 @@ fn index() -> String {
     format!("Welcome")
 }
 
-#[post("/customer", data = "<customer>")]
-fn create_customer(customer: Json<Customer>, connection: db::Connection) -> Json<JsonValue> {
-    let insert = Customer {
-        ..customer.into_inner()
+#[post("/customer", data = "<dto>")]
+fn create_customer(dto: Json<CustomerDto>, connection: db::Connection) -> Json<JsonValue> {
+    let insert = CustomerDto {
+        ..dto.into_inner()
     };
     return Json(json!({
         "success": true,
@@ -52,11 +52,10 @@ fn read_customer(connection: db::Connection) -> Json<JsonValue> {
 #[put("/customer/<id>", data = "<customer>")]
 fn update_customer(
     id: i32,
-    customer: Json<Customer>,
+    customer: Json<CustomerDto>,
     connection: db::Connection,
 ) -> Json<JsonValue> {
-    let update = Customer {
-        id: id,
+    let update = CustomerDto {
         ..customer.into_inner()
     };
     Json(json!({ "data": Customer::update(id, update, &connection) }))
@@ -107,7 +106,7 @@ fn delete_progress(id: i32, connection: db::Connection) -> Json<JsonValue> {
 #[post("/user", data = "<user>")]
 fn create_user(
     user: Json<User>,
-    mut cookies: Cookies,
+    cookies: Cookies,
     connection: db::Connection,
 ) -> Json<JsonValue> {
     let token: &Cookie = cookies.get("token").unwrap();

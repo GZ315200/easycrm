@@ -1,0 +1,6 @@
+/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/lazy_static-8ca06278f5bc974b.rmeta: /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/lazy_static-1.4.0/src/lib.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/lazy_static-1.4.0/src/inline_lazy.rs
+
+/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/lazy_static-8ca06278f5bc974b.d: /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/lazy_static-1.4.0/src/lib.rs /Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/lazy_static-1.4.0/src/inline_lazy.rs
+
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/lazy_static-1.4.0/src/lib.rs:
+/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/lazy_static-1.4.0/src/inline_lazy.rs:

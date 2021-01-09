@@ -1,0 +1,14 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 17853861895238563335,
+  "profile": 16668067249205866872,
+  "path": 5872125637148023264,
+  "deps": [],
+  "local": [
+    { "CheckDepInfo": { "dep_info": "debug/.fingerprint/adler-abd10762e84c5d7a/dep-lib-adler" } }
+  ],
+  "rustflags": [],
+  "metadata": 10673633425720882208,
+  "config": 0
+}

@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 8057958599601384868,
+  "profile": 9935990280773120926,
+  "path": 17827848936655801860,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/scopeguard-0ffdb27814689526/dep-lib-scopeguard-0ffdb27814689526"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 8648443508444719667
+}

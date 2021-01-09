@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 10433696914215661898,
+  "profile": 9935990280773120926,
+  "path": 16529474120650227805,
+  "deps": [[18190162253369568988, "parking_lot", false, 8310217739718534770]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/scheduled-thread-pool-f89af1875ebc8747/dep-lib-scheduled_thread_pool-f89af1875ebc8747"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 9977391753044744925
+}

@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 11828925416930750985,
+  "profile": 9935990280773120926,
+  "path": 5633893636945207970,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/yansi-cf1cbb5e68e14684/dep-lib-yansi-cf1cbb5e68e14684"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 17119822801374816370
+}
