@@ -36,7 +36,8 @@ fn create_customer(dto: Json<CustomerDto>, connection: db::Connection) -> Json<J
         ..dto.into_inner()
     };
     return Json(json!({
-        "success": true,
+        "code": "000",
+        "msg": "成功",
         "data": Customer::create(insert, &connection)
     }));
 }
@@ -44,7 +45,8 @@ fn create_customer(dto: Json<CustomerDto>, connection: db::Connection) -> Json<J
 #[get("/customer")]
 fn read_customer(connection: db::Connection) -> Json<JsonValue> {
     return Json(json!({
-        "success": true,
+        "code": "000",
+        "msg": "成功",
         "data": Customer::read(&connection)
     }));
 }
@@ -58,12 +60,20 @@ fn update_customer(
     let update = CustomerDto {
         ..customer.into_inner()
     };
-    Json(json!({ "data": Customer::update(id, update, &connection) }))
+    Json(json!({ 
+        "code": "000",
+        "msg": "成功",
+        "data": Customer::update(id, update, &connection) 
+    }))
 }
 
 #[delete("/customer/<id>")]
 fn delete_customer(id: i32, connection: db::Connection) -> Json<JsonValue> {
-    Json(json!({ "success": Customer::delete(id, &connection) }))
+    Json(json!({ 
+        "code": "000",
+        "msg": "成功",
+        "data": Customer::delete(id, &connection) 
+    }))
 }
 
 #[post("/progress", data = "<progress>")]
