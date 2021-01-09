@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 18284219634824869270,
+  "profile": 6299028598154287785,
+  "path": 2859382790415281377,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/smallvec-b2502309bd852f94/dep-lib-smallvec"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 15767570753543272391,
+  "config": 0
+}

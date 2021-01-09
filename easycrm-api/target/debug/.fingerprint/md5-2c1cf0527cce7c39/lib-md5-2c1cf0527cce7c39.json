@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"default\", \"std\"]",
+  "target": 14010213046250819582,
+  "profile": 9935990280773120926,
+  "path": 51984014497619260,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/md5-2c1cf0527cce7c39/dep-lib-md5-2c1cf0527cce7c39"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 10443698767864065115
+}

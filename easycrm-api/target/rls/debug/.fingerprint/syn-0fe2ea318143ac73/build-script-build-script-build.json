@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"clone-impls\", \"default\", \"derive\", \"fold\", \"full\", \"parsing\", \"printing\", \"proc-macro\", \"quote\", \"visit\"]",
+  "target": 10429514197457385088,
+  "profile": 6299028598154287785,
+  "path": 14147095038398901272,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/syn-0fe2ea318143ac73/dep-build-script-build-script-build"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 6886477143387768027,
+  "config": 0
+}

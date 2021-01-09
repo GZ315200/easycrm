@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 18068743889051296496,
+  "profile": 16668067249205866872,
+  "path": 5630729352892278876,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/traitobject-33c9b6d5f6c1e2eb/dep-lib-traitobject"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 6130570391916809781,
+  "config": 0
+}

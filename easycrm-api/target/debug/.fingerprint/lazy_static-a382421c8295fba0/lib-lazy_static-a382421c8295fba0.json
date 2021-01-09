@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 4305255212375831529,
+  "profile": 9935990280773120926,
+  "path": 17291549524536854665,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/lazy_static-a382421c8295fba0/dep-lib-lazy_static-a382421c8295fba0"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 111743654650316589
+}

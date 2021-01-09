@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 8132289719815593995,
+  "profile": 9935990280773120926,
+  "path": 14091891080064525958,
+  "deps": [[5079911357566212962, "build_script_build", false, 11581773393496049581]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/unicase-185b4a2072c769d3/dep-lib-unicase-185b4a2072c769d3"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 10319673606566487620
+}

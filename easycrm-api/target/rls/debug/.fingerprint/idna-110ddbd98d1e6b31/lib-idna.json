@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[]",
+  "target": 12902358320323392291,
+  "profile": 16668067249205866872,
+  "path": 4519892681699156257,
+  "deps": [
+    [10814161507482578672, "unicode_normalization", false, 5747390962431423432],
+    [14435265173268454102, "unicode_bidi", false, 8206554021146635037],
+    [14819610710800023329, "matches", false, 9143539915387018685]
+  ],
+  "local": [
+    { "CheckDepInfo": { "dep_info": "debug/.fingerprint/idna-110ddbd98d1e6b31/dep-lib-idna" } }
+  ],
+  "rustflags": [],
+  "metadata": 2073908187922168752,
+  "config": 0
+}

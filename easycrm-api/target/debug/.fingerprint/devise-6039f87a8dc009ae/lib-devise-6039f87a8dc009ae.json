@@ -1,0 +1,20 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 16821799731895387260,
+  "profile": 9935990280773120926,
+  "path": 358210490983911573,
+  "deps": [
+    [10444204004785493849, "devise_codegen", false, 7047590305243064703],
+    [11491314544355812667, "devise_core", false, 8178493890367430076]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/devise-6039f87a8dc009ae/dep-lib-devise-6039f87a8dc009ae"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 8889497295951389553
+}

@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"default\", \"std\"]",
+  "target": 10088282520713642473,
+  "profile": 9935990280773120926,
+  "path": 13785001177650108004,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/memchr-fc7bf00de90edabe/dep-build-script-build_script_build-fc7bf00de90edabe"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 2920040441970090600
+}

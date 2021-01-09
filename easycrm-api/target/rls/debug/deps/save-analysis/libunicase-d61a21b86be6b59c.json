@@ -1,0 +1,773 @@
+{
+  "config": {
+    "output_file": null,
+    "full_docs": false,
+    "pub_only": true,
+    "reachable_only": true,
+    "distro_crate": false,
+    "signatures": false,
+    "borrow_data": false
+  },
+  "version": "0.19.0",
+  "compilation": {
+    "directory": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2",
+    "program": "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rls",
+    "arguments": [
+      "--crate-name",
+      "unicase",
+      "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+      "--json=diagnostic-rendered-ansi,artifacts",
+      "--crate-type",
+      "lib",
+      "--emit=dep-info,metadata,link",
+      "-C",
+      "embed-bitcode=no",
+      "-C",
+      "debuginfo=2",
+      "-C",
+      "metadata=d61a21b86be6b59c",
+      "-C",
+      "extra-filename=-d61a21b86be6b59c",
+      "--out-dir",
+      "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "-L",
+      "dependency=/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps",
+      "--cap-lints",
+      "allow",
+      "--cfg",
+      "__unicase__iter_cmp",
+      "--cfg",
+      "__unicase__default_hasher",
+      "--error-format=json",
+      "--sysroot",
+      "/Users/oyo02699/.rustup/toolchains/stable-x86_64-apple-darwin"
+    ],
+    "output": "/Users/oyo02699/apps/easycrm/easycrm-api/target/rls/debug/deps/libunicase-d61a21b86be6b59c.rmeta"
+  },
+  "prelude": {
+    "crate_id": { "name": "unicase", "disambiguator": [3893670237168197008, 14166155981785632748] },
+    "crate_root": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src",
+    "external_crates": [
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 1,
+        "id": { "name": "std", "disambiguator": [3710194649008989715, 14559669089861450418] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 2,
+        "id": { "name": "core", "disambiguator": [9392975149979234998, 17049149762166397483] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 3,
+        "id": {
+          "name": "compiler_builtins",
+          "disambiguator": [16512841426258775062, 11665789721448774207]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 4,
+        "id": {
+          "name": "rustc_std_workspace_core",
+          "disambiguator": [10630307797325716480, 16523273723520132349]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 5,
+        "id": { "name": "alloc", "disambiguator": [3264716338318844693, 12681592148182797578] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 6,
+        "id": { "name": "libc", "disambiguator": [140397795414171834, 1910274434865169512] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 7,
+        "id": { "name": "unwind", "disambiguator": [5557669672741662647, 10322216614238315513] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 8,
+        "id": { "name": "cfg_if", "disambiguator": [14339503364484872598, 13531520383629478599] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 9,
+        "id": { "name": "hashbrown", "disambiguator": [14161909693946419124, 17554770295131960960] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 10,
+        "id": {
+          "name": "rustc_std_workspace_alloc",
+          "disambiguator": [9716880057120631437, 4575334529379688610]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 11,
+        "id": {
+          "name": "rustc_demangle",
+          "disambiguator": [17190292700912465587, 13293574150729131089]
+        }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 12,
+        "id": { "name": "addr2line", "disambiguator": [16973425767318922457, 5762286362994384933] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 13,
+        "id": { "name": "gimli", "disambiguator": [3049460603833016674, 5895625007283919048] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 14,
+        "id": { "name": "object", "disambiguator": [8971705811930800565, 4802059752817986136] }
+      },
+      {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "num": 15,
+        "id": {
+          "name": "panic_unwind",
+          "disambiguator": [7414259369911982492, 16117941559470048194]
+        }
+      }
+    ],
+    "span": {
+      "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+      "byte_start": 0,
+      "byte_end": 5192,
+      "line_start": 1,
+      "line_end": 214,
+      "column_start": 1,
+      "column_end": 2
+    }
+  },
+  "imports": [],
+  "defs": [
+    {
+      "kind": "Mod",
+      "id": { "krate": 0, "index": 0 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 0,
+        "byte_end": 5192,
+        "line_start": 1,
+        "line_end": 214,
+        "column_start": 1,
+        "column_end": 2
+      },
+      "name": "",
+      "qualname": "::",
+      "value": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+      "parent": null,
+      "children": [
+        { "krate": 0, "index": 1 },
+        { "krate": 0, "index": 2 },
+        { "krate": 0, "index": 3 },
+        { "krate": 0, "index": 4 },
+        { "krate": 0, "index": 5 },
+        { "krate": 0, "index": 6 },
+        { "krate": 0, "index": 7 },
+        { "krate": 0, "index": 89 },
+        { "krate": 0, "index": 8 },
+        { "krate": 0, "index": 9 },
+        { "krate": 0, "index": 10 },
+        { "krate": 0, "index": 11 },
+        { "krate": 0, "index": 12 },
+        { "krate": 0, "index": 53 },
+        { "krate": 0, "index": 63 },
+        { "krate": 0, "index": 60 },
+        { "krate": 0, "index": 57 },
+        { "krate": 0, "index": 13 },
+        { "krate": 0, "index": 18 },
+        { "krate": 0, "index": 22 },
+        { "krate": 0, "index": 25 },
+        { "krate": 0, "index": 30 },
+        { "krate": 0, "index": 33 },
+        { "krate": 0, "index": 36 },
+        { "krate": 0, "index": 40 },
+        { "krate": 0, "index": 42 },
+        { "krate": 0, "index": 46 },
+        { "krate": 0, "index": 65 },
+        { "krate": 0, "index": 68 },
+        { "krate": 0, "index": 71 },
+        { "krate": 0, "index": 74 },
+        { "krate": 0, "index": 77 },
+        { "krate": 0, "index": 80 }
+      ],
+      "decl_id": null,
+      "docs": " # Case",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ # Case",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 204,
+            "byte_end": 214,
+            "line_start": 6,
+            "line_end": 6,
+            "column_start": 1,
+            "column_end": 11
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 215,
+            "byte_end": 218,
+            "line_start": 7,
+            "line_end": 7,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ Case provices a way of specifying strings that are case-insensitive.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 219,
+            "byte_end": 291,
+            "line_start": 8,
+            "line_end": 8,
+            "column_start": 1,
+            "column_end": 73
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 292,
+            "byte_end": 295,
+            "line_start": 9,
+            "line_end": 9,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ ## Example",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 296,
+            "byte_end": 310,
+            "line_start": 10,
+            "line_end": 10,
+            "column_start": 1,
+            "column_end": 15
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 311,
+            "byte_end": 314,
+            "line_start": 11,
+            "line_end": 11,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ ```rust",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 315,
+            "byte_end": 326,
+            "line_start": 12,
+            "line_end": 12,
+            "column_start": 1,
+            "column_end": 12
+          }
+        },
+        {
+          "value": "/ use unicase::UniCase;",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 327,
+            "byte_end": 352,
+            "line_start": 13,
+            "line_end": 13,
+            "column_start": 1,
+            "column_end": 26
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 353,
+            "byte_end": 356,
+            "line_start": 14,
+            "line_end": 14,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ let a = UniCase(\"foobar\");",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 357,
+            "byte_end": 387,
+            "line_start": 15,
+            "line_end": 15,
+            "column_start": 1,
+            "column_end": 31
+          }
+        },
+        {
+          "value": "/ let b = UniCase(\"FoObAr\");",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 388,
+            "byte_end": 418,
+            "line_start": 16,
+            "line_end": 16,
+            "column_start": 1,
+            "column_end": 31
+          }
+        },
+        {
+          "value": "/",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 419,
+            "byte_end": 422,
+            "line_start": 17,
+            "line_end": 17,
+            "column_start": 1,
+            "column_end": 4
+          }
+        },
+        {
+          "value": "/ assert_eq!(a, b);",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 423,
+            "byte_end": 444,
+            "line_start": 18,
+            "line_end": 18,
+            "column_start": 1,
+            "column_end": 22
+          }
+        },
+        {
+          "value": "/ ```",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 445,
+            "byte_end": 452,
+            "line_start": 19,
+            "line_end": 19,
+            "column_start": 1,
+            "column_end": 8
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Struct",
+      "id": { "krate": 0, "index": 53 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 825,
+        "byte_end": 832,
+        "line_start": 35,
+        "line_end": 35,
+        "column_start": 12,
+        "column_end": 19
+      },
+      "name": "UniCase",
+      "qualname": "::UniCase",
+      "value": "",
+      "parent": null,
+      "children": [],
+      "decl_id": null,
+      "docs": " Case Insensitive wrapper of strings.\n",
+      "sig": null,
+      "attributes": [
+        {
+          "value": "/ Case Insensitive wrapper of strings.",
+          "span": {
+            "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+            "byte_start": 688,
+            "byte_end": 728,
+            "line_start": 32,
+            "line_end": 32,
+            "column_start": 1,
+            "column_end": 41
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Field",
+      "id": { "krate": 0, "index": 56 },
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 836,
+        "byte_end": 841,
+        "line_start": 35,
+        "line_end": 35,
+        "column_start": 23,
+        "column_end": 28
+      },
+      "name": "0",
+      "qualname": "::UniCase::0",
+      "value": "S",
+      "parent": { "krate": 0, "index": 53 },
+      "children": [],
+      "decl_id": null,
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    }
+  ],
+  "impls": [
+    {
+      "id": 0,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 863,
+        "byte_end": 870,
+        "line_start": 37,
+        "line_end": 37,
+        "column_start": 19,
+        "column_end": 26
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 15 }, { "krate": 0, "index": 16 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 1,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 995,
+        "byte_end": 1002,
+        "line_start": 45,
+        "line_end": 45,
+        "column_start": 22,
+        "column_end": 29
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 20 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 2,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1164,
+        "byte_end": 1171,
+        "line_start": 53,
+        "line_end": 53,
+        "column_start": 36,
+        "column_end": 43
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 24 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 3,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1334,
+        "byte_end": 1341,
+        "line_start": 60,
+        "line_end": 60,
+        "column_start": 29,
+        "column_end": 36
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 27 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 4,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1635,
+        "byte_end": 1642,
+        "line_start": 68,
+        "line_end": 68,
+        "column_start": 36,
+        "column_end": 43
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 32 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 5,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1766,
+        "byte_end": 1773,
+        "line_start": 76,
+        "line_end": 76,
+        "column_start": 40,
+        "column_end": 47
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 35 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 6,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1958,
+        "byte_end": 1965,
+        "line_start": 83,
+        "line_end": 83,
+        "column_start": 56,
+        "column_end": 63
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 39 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 7,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 2121,
+        "byte_end": 2128,
+        "line_start": 91,
+        "line_end": 91,
+        "column_start": 28,
+        "column_end": 35
+      },
+      "value": "",
+      "parent": null,
+      "children": [],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 8,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 2165,
+        "byte_end": 2172,
+        "line_start": 93,
+        "line_end": 93,
+        "column_start": 30,
+        "column_end": 37
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 44 }, { "krate": 0, "index": 45 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    },
+    {
+      "id": 9,
+      "kind": "Direct",
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 2353,
+        "byte_end": 2360,
+        "line_start": 100,
+        "line_end": 100,
+        "column_start": 30,
+        "column_end": 37
+      },
+      "value": "",
+      "parent": null,
+      "children": [{ "krate": 0, "index": 48 }],
+      "docs": "",
+      "sig": null,
+      "attributes": []
+    }
+  ],
+  "refs": [],
+  "macro_refs": [],
+  "relations": [
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 863,
+        "byte_end": 870,
+        "line_start": 37,
+        "line_end": 37,
+        "column_start": 19,
+        "column_end": 26
+      },
+      "kind": { "Impl": { "id": 0 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 2242 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 995,
+        "byte_end": 1002,
+        "line_start": 45,
+        "line_end": 45,
+        "column_start": 22,
+        "column_end": 29
+      },
+      "kind": { "Impl": { "id": 1 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 2255 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1164,
+        "byte_end": 1171,
+        "line_start": 53,
+        "line_end": 53,
+        "column_start": 36,
+        "column_end": 43
+      },
+      "kind": { "Impl": { "id": 2 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 1807 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1334,
+        "byte_end": 1341,
+        "line_start": 60,
+        "line_end": 60,
+        "column_start": 29,
+        "column_end": 36
+      },
+      "kind": { "Impl": { "id": 3 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 1796 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1635,
+        "byte_end": 1642,
+        "line_start": 68,
+        "line_end": 68,
+        "column_start": 36,
+        "column_end": 43
+      },
+      "kind": { "Impl": { "id": 4 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 1954 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1766,
+        "byte_end": 1773,
+        "line_start": 76,
+        "line_end": 76,
+        "column_start": 40,
+        "column_end": 47
+      },
+      "kind": { "Impl": { "id": 5 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 6604 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 1958,
+        "byte_end": 1965,
+        "line_start": 83,
+        "line_end": 83,
+        "column_start": 56,
+        "column_end": 63
+      },
+      "kind": { "Impl": { "id": 6 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 1770 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 2121,
+        "byte_end": 2128,
+        "line_start": 91,
+        "line_end": 91,
+        "column_start": 28,
+        "column_end": 35
+      },
+      "kind": { "Impl": { "id": 7 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 1775 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 2165,
+        "byte_end": 2172,
+        "line_start": 93,
+        "line_end": 93,
+        "column_start": 30,
+        "column_end": 37
+      },
+      "kind": { "Impl": { "id": 8 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 8571 }
+    },
+    {
+      "span": {
+        "file_name": "/Users/oyo02699/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/unicase-1.4.2/src/lib.rs",
+        "byte_start": 2353,
+        "byte_end": 2360,
+        "line_start": 100,
+        "line_end": 100,
+        "column_start": 30,
+        "column_end": 37
+      },
+      "kind": { "Impl": { "id": 9 } },
+      "from": { "krate": 0, "index": 53 },
+      "to": { "krate": 2, "index": 6787 }
+    }
+  ]
+}

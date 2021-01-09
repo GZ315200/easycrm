@@ -1,0 +1,20 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 6979069168580667722,
+  "profile": 9935990280773120926,
+  "path": 2449528385748342018,
+  "deps": [
+    [6240930048111639468, "safemem", false, 3234660864148622523],
+    [9144014140450427062, "byteorder", false, 1890586936613599035]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/base64-3b48015d9f1ff9d0/dep-lib-base64-3b48015d9f1ff9d0"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 1504710966265071536
+}

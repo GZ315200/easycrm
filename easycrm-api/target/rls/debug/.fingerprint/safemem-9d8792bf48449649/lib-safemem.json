@@ -1,0 +1,16 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"default\", \"std\"]",
+  "target": 7532111961563040860,
+  "profile": 16668067249205866872,
+  "path": 16686496833442802306,
+  "deps": [],
+  "local": [
+    {
+      "CheckDepInfo": { "dep_info": "debug/.fingerprint/safemem-9d8792bf48449649/dep-lib-safemem" }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 5961032267634545031,
+  "config": 0
+}

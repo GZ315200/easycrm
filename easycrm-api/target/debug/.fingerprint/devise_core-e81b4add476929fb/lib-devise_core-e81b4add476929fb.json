@@ -1,0 +1,22 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[]",
+  "target": 4762223326472821837,
+  "profile": 9935990280773120926,
+  "path": 3794113720010893492,
+  "deps": [
+    [2622030215893191803, "proc_macro2", false, 2375226943569910728],
+    [4117749705314174326, "bitflags", false, 2459618723873809092],
+    [5241467826411637216, "syn", false, 25706393424383595],
+    [9633566913067575607, "quote", false, 3685386585206148158]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/devise_core-e81b4add476929fb/dep-lib-devise_core-e81b4add476929fb"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 8889497295951389553
+}

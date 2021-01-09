@@ -1,0 +1,17 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"backtrace\"]",
+  "target": 18133763664583254081,
+  "profile": 9935990280773120926,
+  "path": 4266518260451095331,
+  "deps": [[10994474833937252572, "backtrace", false, 6767205885363752069]],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/error-chain-8c4f1ae8d8f36376/dep-lib-error_chain-8c4f1ae8d8f36376"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 7997956376172494424
+}

@@ -1,0 +1,20 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"32-column-tables\", \"chrono\", \"default\", \"mysql\", \"mysqlclient-sys\", \"url\", \"with-deprecated\"]",
+  "target": 3562957392446185765,
+  "profile": 16668067249205866872,
+  "path": 9389215043672380030,
+  "deps": [
+    [8146038286185888119, "chrono", false, 14783595233356734579],
+    [9144014140450427062, "byteorder", false, 6178781698390126887],
+    [9884943830247149765, "diesel_derives", false, 14876710483552679688],
+    [12025247984856083105, "url", false, 10062458445739403413],
+    [17499414838819180525, "mysqlclient_sys", false, 17520514769627857620]
+  ],
+  "local": [
+    { "CheckDepInfo": { "dep_info": "debug/.fingerprint/diesel-c9fc099a90c954a6/dep-lib-diesel" } }
+  ],
+  "rustflags": [],
+  "metadata": 18182851847953283004,
+  "config": 0
+}

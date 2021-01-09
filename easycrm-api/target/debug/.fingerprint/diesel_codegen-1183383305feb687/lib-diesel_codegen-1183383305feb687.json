@@ -1,0 +1,25 @@
+{
+  "rustc": 10490979388726337421,
+  "features": "[\"default\", \"diesel_infer_schema\", \"dotenv\", \"mysql\"]",
+  "target": 1949887003725280812,
+  "profile": 9935990280773120926,
+  "path": 1973280673651379986,
+  "deps": [
+    [1589978111824768747, "diesel", false, 11350002696926937340],
+    [4393774116602289396, "dotenv", false, 1597997815290945465],
+    [8181095935280535816, "quote", false, 5137654822750285116],
+    [8803029363786022311, "diesel_infer_schema", false, 17783097149259390969],
+    [9074916823287167428, "serde", false, 3626562951016003394],
+    [14510244166005358681, "syn", false, 6293801331129906877],
+    [17010199177273898012, "serde_json", false, 14163167909287795863]
+  ],
+  "local": [
+    {
+      "CheckDepInfo": {
+        "dep_info": "debug/.fingerprint/diesel_codegen-1183383305feb687/dep-lib-diesel_codegen-1183383305feb687"
+      }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 15232484969729341149
+}

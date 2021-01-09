@@ -1,0 +1,18 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"backtrace\", \"default\"]",
+  "target": 11318179966537946235,
+  "profile": 16668067249205866872,
+  "path": 13421868900966685057,
+  "deps": [
+    [5169132608787813152, "error_chain", false, 689551257927332175],
+    [8075812929151917893, "regex", false, 14385629954038873172],
+    [14213770844637961759, "derive_error_chain", false, 1464674181039028968]
+  ],
+  "local": [
+    { "CheckDepInfo": { "dep_info": "debug/.fingerprint/dotenv-fbd5f017aca3fdff/dep-lib-dotenv" } }
+  ],
+  "rustflags": [],
+  "metadata": 2362755889046804068,
+  "config": 0
+}

@@ -1,0 +1,16 @@
+{
+  "rustc": 12837389265337637431,
+  "features": "[\"alloc\", \"default\", \"tinyvec_macros\"]",
+  "target": 4654680736203621481,
+  "profile": 16668067249205866872,
+  "path": 13326922258391565249,
+  "deps": [[6535664481540118762, "tinyvec_macros", false, 12509513834910345630]],
+  "local": [
+    {
+      "CheckDepInfo": { "dep_info": "debug/.fingerprint/tinyvec-34fd306896f45dcd/dep-lib-tinyvec" }
+    }
+  ],
+  "rustflags": [],
+  "metadata": 1794145956658384099,
+  "config": 0
+}
