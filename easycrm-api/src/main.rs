@@ -27,7 +27,7 @@ pub mod schema;
 
 #[get("/index")]
 fn index() -> String {
-    format!("Welcome to EasyCrm")
+    format!("Welcome to Easy crm")
 }
 
 #[post("/customer", data = "<dto>")]
